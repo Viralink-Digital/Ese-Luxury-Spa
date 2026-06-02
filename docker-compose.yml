@@ -1,0 +1,2 @@
+version: '3.9'
+# Redis removed from compose (not required anymore)

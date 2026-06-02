@@ -1,0 +1,52 @@
+/* src/styles/components.css */
+/* Additional component overrides and utility classes */
+
+/* ─── SECTION SPECIFIC ───────────────────────────────────── */
+.section-header--center .section-sub {
+  color: var(--gray-500);
+  max-width: 540px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ─── SCROLL ANIMATIONS ──────────────────────────────────── */
+@media (prefers-reduced-motion: no-preference) {
+  .product-card {
+    animation: fadeInUp 0.4s ease both;
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* ─── FOCUS ACCESSIBILITY ────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--rose-gold);
+  outline-offset: 2px;
+}
+
+/* ─── PRINT STYLES ───────────────────────────────────────── */
+@media print {
+  .navbar, .footer, .whatsapp-btn, .cart-drawer, .cart-backdrop { display: none !important; }
+  body { font-size: 12pt; }
+  .container { max-width: 100%; padding: 0; }
+}
+
+/* ─── CUSTOM SCROLLBAR ───────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--gray-300); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--rose-gold); }
+
+/* ─── LOADING ANIMATIONS ─────────────────────────────────── */
+.cart-items-skeleton { display: flex; flex-direction: column; gap: 12px; padding: 8px; }
+.cart-item-skeleton { display: flex; gap: 12px; padding: 12px; }
+
+/* ─── FORM UTILITIES ─────────────────────────────────────── */
+.form-optional { font-size: 0.75rem; color: var(--gray-400); margin-left: 4px; }
+
+/* ─── ERROR STATES ───────────────────────────────────────── */
+.form-input.error { border-color: var(--error); }
+.form-error { font-size: 0.75rem; color: var(--error); margin-top: 4px; }
