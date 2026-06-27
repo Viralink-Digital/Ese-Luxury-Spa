@@ -11,6 +11,9 @@ import PromoBanners from '@/components/home/PromoBanners';
 import TestimonialsSection from '@/components/home/TestimonialsSection';
 import InstagramGrid from '@/components/home/InstagramGrid';
 import BeautyTips from '@/components/home/BeautyTips';
+import aboutUsImage from '@/styles/about us image.jpg';
+import ecoFriendlyImage from '@/styles/eco-friendly.jpg';
+import pinkStampImage from '@/styles/pink-stamp.jpg';
 
 const TRUST_BADGES = [
   { Icon: Truck, title: 'Free Delivery', sub: 'Orders over GH₵15,000' },
@@ -184,12 +187,7 @@ export default function HomePage() {
         <div className="container">
           <div className="about-strip__inner">
             <div className="about-strip__images">
-              {[
-                'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=280&h=340&fit=crop',
-                'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=280&h=260&fit=crop',
-                'https://images.unsplash.com/photo-1554284126-aa88f22d8b74?w=280&h=260&fit=crop',
-                'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=280&h=340&fit=crop',
-              ].map((src, i) => (
+              {[aboutUsImage, ecoFriendlyImage, pinkStampImage, aboutUsImage].map((src, i) => (
                 <img key={i} src={src} alt="" loading="lazy" className={`about-strip__img about-strip__img--${i}`} />
               ))}
               <div className="about-strip__badge">

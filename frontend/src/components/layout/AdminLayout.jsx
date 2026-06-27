@@ -117,7 +117,7 @@ export default function AdminLayout() {
                 {(user?.firstName?.[0] || 'A').toUpperCase()}
               </div>
               <div className="admin-topbar__user-info">
-                <span className="admin-topbar__user-name">{user?.firstName || 'Admin'}</span> <br />
+                <span className="admin-topbar__user-name">{user?.firstName || 'Admin'}</span> <br/>
                 <span className="admin-topbar__user-role"> {user?.role}</span>
               </div>
             </div>

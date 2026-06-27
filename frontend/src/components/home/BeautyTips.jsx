@@ -1,6 +1,7 @@
 // src/components/home/BeautyTips.jsx
 import { Link } from 'react-router-dom';
 import { ChevronRight, Clock, Tag } from 'lucide-react';
+import aboutUsImage from '@/styles/about us image.jpg';
 
 const TIPS = [
   {
@@ -17,7 +18,7 @@ const TIPS = [
     category: 'Makeup',
     title: 'How to Choose the Right Foundation for Your Skin Tone',
     excerpt: 'Finding your perfect foundation match can be tricky. Here\'s a foolproof guide to nailing your skin tone every single time.',
-    image: 'https://images.unsplash.com/photo-1583241800698-e8ab01830a74?w=400&h=250&fit=crop',
+    image: aboutUsImage,
     readTime: '7 min read',
     href: '/blogs/foundation-guide',
   },
