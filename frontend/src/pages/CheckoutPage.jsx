@@ -46,7 +46,7 @@ export default function CheckoutPage() {
     try {
       const res = await couponApi.validate({ code: couponCode, subtotal });
       setCouponData(res.data.data);
-      toast.success(`Coupon applied! You save GH₵${res.data.data.discount.toLocaleString()}`);
+      toast.success(`Coupon applied! You save ₦${res.data.data.discount.toLocaleString()}`);
     } catch (err) {
       toast.error(err.response?.data?.message || 'Invalid coupon');
       setCouponData(null);
@@ -89,7 +89,7 @@ export default function CheckoutPage() {
               {item.variant && <p className="checkout-summary__item-variant">{item.variant.value}</p>}
             </div>
             <span className="checkout-summary__item-price">
-              GH₵{(parseFloat(item.variant?.price || item.product?.basePrice) * item.quantity).toLocaleString()}
+              ₦{(parseFloat(item.variant?.price || item.product?.basePrice) * item.quantity).toLocaleString()}
             </span>
           </div>
         ))}
@@ -116,7 +116,7 @@ export default function CheckoutPage() {
         </div>
         {couponData && (
           <p className="checkout-coupon__success">
-            ✓ {couponData.coupon.code} applied — save GH₵{parseFloat(couponData.discount).toLocaleString()}
+            ✓ {couponData.coupon.code} applied — save ₦{parseFloat(couponData.discount).toLocaleString()}
           </p>
         )}
       </div>
@@ -124,21 +124,21 @@ export default function CheckoutPage() {
       <div className="checkout-totals">
         <div className="checkout-total-row">
           <span>Subtotal</span>
-          <span>GH₵{subtotal.toLocaleString()}</span>
+          <span>₦{subtotal.toLocaleString()}</span>
         </div>
         {discount > 0 && (
           <div className="checkout-total-row checkout-total-row--discount">
             <span>Discount</span>
-            <span>-GH₵{parseFloat(discount).toLocaleString()}</span>
+            <span>-₦{parseFloat(discount).toLocaleString()}</span>
           </div>
         )}
         <div className="checkout-total-row">
           <span>Shipping</span>
-          <span>{shippingFee === 0 ? 'Free' : `GH₵${shippingFee.toLocaleString()}`}</span>
+          <span>{shippingFee === 0 ? 'Free' : `₦${shippingFee.toLocaleString()}`}</span>
         </div>
         <div className="checkout-total-row checkout-total-row--total">
           <span>Total</span>
-          <span>GH₵{total.toLocaleString()}</span>
+          <span>₦{total.toLocaleString()}</span>
         </div>
       </div>
     </div>

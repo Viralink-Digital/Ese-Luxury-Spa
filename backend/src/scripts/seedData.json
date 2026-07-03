@@ -1,0 +1,2392 @@
+{
+  "products": [
+    {
+      "id": "01f5ae6a-7c81-470a-a364-b126d6d92c2e",
+      "name": "COSRX AHA/BHA Clarifying Treatment Toner",
+      "slug": "cosrx-ahabha-clarifying-treatment-toner",
+      "description": "The ultimate clarifying first step. This toner is formulated with AHA and BHA to gently exfoliate and clear pores. It helps refine skin texture, remove dead skin cells, and reduce the appearance of blackheads and whiteheads, promoting a clearer, more radiant complexion.\n",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/904aba3f-30e9-42a6-8ef4-e8fd4ce2722f-original.webp",
+          "altText": "COSRX AHA/BHA Clarifying Treatment Toner",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+        "name": "🌿 Toner",
+        "slug": "toner"
+      }
+    },
+    {
+      "id": "07eb7482-ad65-407a-af3e-0a77fba7c56a",
+      "name": " Biore UV Watery Essence",
+      "slug": "biore-uv-watery-essence",
+      "description": "World-first micro-defense sunscreen. This ultra-light watery essence sunscreen offers powerful SPF 50+ PA++++ protection against harmful UV rays. The innovative formula provides a lightweight, non-sticky feel while effectively protecting your skin. The perfect daily sunscreen for all skin types.\n",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "af971518-6c23-410b-a881-7cbe5d02daef",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/6c00895a-7ef4-4fa4-85e3-a75787cd1b3b-original.webp",
+          "altText": " Biore UV Watery Essence",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/2de76185-37af-47e6-a6b2-1194f15c02c7-original.webp",
+          "altText": " Biore UV Watery Essence",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "af971518-6c23-410b-a881-7cbe5d02daef",
+        "name": "🧴 Sunscreen",
+        "slug": "sunscreen"
+      }
+    },
+    {
+      "id": "08aa9941-ff65-49ed-b47c-a3d29cb249fa",
+      "name": " Estelin Moisturizing Toner (Hyaluronic Acid + Vitamin C + Niacinamide)",
+      "slug": "estelin-moisturizing-toner-hyaluronic-acid-vitamin-c-niacinamide",
+      "description": "The ultimate hydration boost for your skin. This moisturizing fluid is formulated with Hyaluronic Acid, Vitamin C, and Niacinamide to hydrate, revitalize, and brighten your complexion. It delivers a surge of moisture while helping to even out skin tone and reduce the appearance of fine lines. Size: 100ml / 3.4fl.oz.\n",
+      "basePrice": "250",
+      "comparePrice": "200",
+      "sku": "",
+      "categoryId": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/a668dd23-70ea-4d13-9f9e-5910dc11a911-original.webp",
+          "altText": " Moisturizing Toner (Hyaluronic Acid + Vitamin C + Niacinamide)",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+        "name": "🌿 Toner",
+        "slug": "toner"
+      }
+    },
+    {
+      "id": "0bb2a8b0-6ee3-442b-b279-ba8e7e4ddb31",
+      "name": " VEET Gold Facial Gel (Acne + Kojic Acid Whitening)",
+      "slug": "veet-gold-facial-gel-acne-kojic-acid-whitening",
+      "description": "Bye-bye pimples and wrinkles. This facial gel is formulated with Kojic Acid to whiten and brighten the skin while targeting acne and blemishes. Suitable for all skin types, it helps reduce the appearance of pimples, wrinkles, and hyperpigmentation. Dermatologist recommended.\n",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "b2180067-ab17-4ed0-a2b1-e59a8383c466",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/7a1998d9-c73f-46fc-8c7b-425786844c03-original.webp",
+          "altText": " VEEET Gold Facial Gel (Acne + Kojic Acid Whitening)",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/44f3ce91-45b0-42b4-8a33-8623e94d904a-original.webp",
+          "altText": " VEEET Gold Facial Gel (Acne + Kojic Acid Whitening)",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "b2180067-ab17-4ed0-a2b1-e59a8383c466",
+        "name": "Facial Gel",
+        "slug": "facial-gel"
+      }
+    },
+    {
+      "id": "0d780502-8a9b-4893-8787-18036d0de885",
+      "name": " Face Facts Restore + Clarify Salicylic Acid Serum",
+      "slug": "face-facts-restore-clarify-salicylic-acid-serum",
+      "description": "Clarify and smooth blemish-prone and oily skin with this 2% Salicylic Acid serum.\n\nThis clarifying serum is formulated with 2% Salicylic Acid (BHA) to gently exfoliate and smooth the skin's appearance and texture. It helps unclog pores, reduce breakouts, and control excess oil production, making it ideal for blemish-prone and oily skin types. Suitable for AM and PM use.\n\nSize: 30ml / 1.01 fl.oz.",
+      "basePrice": "180",
+      "comparePrice": "220",
+      "sku": "",
+      "categoryId": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/733d9ca9-71b4-4a4b-8f4e-f247f5575cd6-original.webp",
+          "altText": " Face Facts Restore + Clarify Salicylic Acid Serum",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/bc919351-4c1d-42ec-9ede-8488389e3a3d-original.webp",
+          "altText": " Face Facts Restore + Clarify Salicylic Acid Serum",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+        "name": "💧 Serum",
+        "slug": "serum"
+      }
+    },
+    {
+      "id": "119b7556-2fab-480f-91d7-4a087518a450",
+      "name": " Alpha Arbutin Collagen Peptide Drink (7D)",
+      "slug": "alpha-arbutin-collagen-peptide-drink-7d",
+      "description": "Beauty that starts from within. This powerful collagen peptide drink is formulated with Alpha Arbutin to support smooth, whitening, and anti-aging benefits. It works to inhibit melanin production, promote collagen growth, and repair damaged skin for a clear and glowing complexion. Each pack contains 8 bottles of 50ml.\n",
+      "basePrice": "250",
+      "comparePrice": "300",
+      "sku": "",
+      "categoryId": "77566a51-bcd0-4b5c-a2df-01aaaf03938c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/a399abcb-1ebc-4df6-ba55-09050aceaac2-original.webp",
+          "altText": " Alpha Arbutin Collagen Peptide Drink (7D)",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/66e0a4fe-fef3-4874-911a-e5362a8d8380-original.webp",
+          "altText": " Alpha Arbutin Collagen Peptide Drink (7D)",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "77566a51-bcd0-4b5c-a2df-01aaaf03938c",
+        "name": "💊 Dietary Supplement",
+        "slug": "dietary-supplement"
+      }
+    },
+    {
+      "id": "1358f2a7-3195-4d41-8135-b5bf6ffd3aef",
+      "name": " Aveeno Skin Relief Body Oil Spray",
+      "slug": "aveeno-skin-relief-body-oil-spray",
+      "description": "\nKey Ingredients:\nGlycine Soja Oil, Avena Sativa Kernel (Oat) Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Lecithin, Ascorbyl Palmitate, Tocopherol (Vitamin E) .\n\n🧴 How to Use\nShake well before use.\n\nSpray directly onto clean, dry skin.\n\nMassage gently until fully absorbed.\n\nUse daily for best results, especially after showering.\n\nPro Tip: For very dry skin, apply immediately after bathing while skin is still slightly damp to lock in moisture.\n\n✨ Key Benefits\n💧 Intense Moisture: Clinically proven to provide long-lasting hydration\n\n🛡️ Restores Skin Barrier: Oat and jojoba oils rich in lipids and fatty acids help repair the skin barrier\n\n✨ Improves Texture: Helps smooth uneven skin texture\n\n🔬 Dermatologist Tested: Safe for very dry, sensitive skin\n\n🌱 Fast-Absorbing: Non-greasy, silky finish\n\n⚠️ Caution\nFor external use only\n\nAvoid contact with eyes\n\nDiscontinue use if irritation occurs\n\nKeep out of reach of children\n\n🏷️ Product Details\nDetail\tInformation\nSize\t200ml (6.7 fl oz)\nSkin Type\tVery dry, sensitive skin\nFormula\tHypoallergenic, tested on all skin tones\nKey Ingredients\tOat Oil, Jojoba Oil\n✨ Face Facts Restore + Clarify Salicylic Acid Serum\nCategory: Serum\nBrand: Face Facts\n\n🌸 Description\nClarify and smooth blemish-prone and oily skin with this 2% Salicylic Acid serum.\n\nThis clarifying serum is formulated with 2% Salicylic Acid (BHA) to gently exfoliate and smooth the skin's appearance and texture. It helps unclog pores, reduce breakouts, and control excess oil production, making it ideal for blemish-prone and oily skin types. Suitable for AM and PM use.\n\nSize: 30ml / 1.01 fl.oz.\n\n🌿 Key Ingredients\nIngredient\tBenefit\n2% Salicylic Acid (BHA)\tA beta-hydroxy acid that penetrates deep into pores to unclog and reduce breakouts, while gently exfoliating the skin's surface\nSoothing Agents\tHelp calm and comfort the skin during the exfoliation process\n🧴 How to Use\nCleanse your face thoroughly.\n\nApply a small amount to clean, dry skin.\n\nGently massage into the face, avoiding the eye area.\n\nAllow to absorb before applying moisturizer.\n\nUse in the morning and evening for best results.\n\nPro Tip: Start by using it once daily to build tolerance. Always apply a sunscreen during the day, as Salicylic Acid can increase sun sensitivity.\n\n✨ Key Benefits\n🎯 Clarifies Skin: Helps smooth skin's appearance and texture\n\n🧹 Unclogs Pores: Salicylic Acid penetrates pores to reduce breakouts\n\n💧 Controls Oil: Helps manage excess sebum production\n\n🧴 Suitable for AM/PM: Gentle enough for twice-daily use\n\n🌱 Vegan Formula: Cruelty-free and vegan\n\n⚠️ Caution\nFor external use only\n\nAvoid contact with eyes\n\nDiscontinue use if irritation occurs\n\nUse sunscreen during the day as Salicylic Acid may increase sun sensitivity\n\nPatch test before full use\n\n🥛 Blemish Care Full Moisturising White Milk Lotion\nCategory: Body Lotion\nBrand: Blemish Care\n\n🌸 Description\nExtra strength whitening and UV lightening formula for a radiant, even complexion.\n\nThis full moisturising white milk lotion is formulated with an extra strength whitening and UV lightening formula. It works to strengthen marks and provides a clearing specialist solution for a brighter, more even skin tone. The lightweight, fast-absorbing formula delivers deep hydration while targeting dark spots and uneven skin.\n\nSize: 350ml\n\n🌿 Key Ingredients\nIngredient\tBenefit\nWhitening Agents\tHelp lighten dark spots and even skin tone\nUV Lightening Formula\tProvides protection against UV damage\nMoisturising Ingredients\tDeeply hydrate and nourish the skin\n🧴 How to Use\nApply generously to clean, dry skin. Massage gently until fully absorbed. Use daily for best results.\n\n✨ Key Benefits\n✨ Extra Strength Whitening: Helps lighten and brighten the skin\n\n☀️ UV Protection: Lightening formula helps protect against UV damage\n\n💧 Deep Moisturisation: Nourishes and hydrates the skin\n\n🎯 Clearing Specialist: Targets dark spots and uneven skin tone\n\n⚠️ Caution\nFor external use only\n\nAvoid contact with eyes\n\nDiscontinue use if irritation occurs\n\n💧 D-Cure Stretch Marks Healing Oil\nCategory: Body Oil\nBrand: D-Cure\n\n🌸 Description\nTarget and reduce the appearance of stretch marks with this healing oil.\n\nThis stretch marks eraser oil is formulated with Centella Asiatica and Aloe Vera to help reduce the appearance of stretch marks while soothing and nourishing the skin. The powerful combination of ingredients works to improve skin elasticity and promote a smoother, more even skin texture.\n\n🌿 Key Ingredients\nIngredient\tBenefit\nCentella Asiatica\tA skin-soothing herb that promotes wound healing and helps improve skin elasticity\nAloe Vera\tHydrates, soothes, and calms the skin\nHealing Oils\tNourish and improve skin texture\n🧴 How to Use\nApply to affected areas and gently massage in circular motions until fully absorbed. Use twice daily for best results.\n\n✨ Key Benefits\n🎯 Reduces Stretch Marks: Helps fade the appearance of existing stretch marks\n\n🔄 Improves Elasticity: Centella Asiatica promotes skin elasticity\n\n💧 Deep Nourishment: Aloe Vera and oils hydrate and soothe the skin\n\n🧴 Targeted Treatment: Designed specifically for stretch mark reduction\n\n⚠️ Caution\nFor external use only\n\nAvoid contact with eyes\n\nKeep out of reach of children\n\n💧 Olay Vitamin C 24HR Moisturizing Body Wash\nCategory: Body Wash\nBrand: Olay\n\n🌸 Description\nIndulge in a luxurious body wash that hydrates instantly for visibly radiant skin.\n\nThis rich, fast-absorbing formula is enriched with Vitamin C and Niacinamide (Vitamin B3) to cleanse, nourish, and hydrate your skin for 24 hours. The premium formula leaves skin feeling soft, silky, and beautifully radiant with every shower. Backed by 60 years of beauty science.\n\nSize: 591ml (20 FL OZ)\n\nKey Ingredients:\nWater, Petrolatum, Sodium Trideceth Sulfate, Sodium Chloride, Cocamidopropyl Betaine, Niacinamide (Vitamin B3), Ascorbic Acid (Vitamin C), Sodium Citrate, Guar Hydroxypropyltrimonium Chloride, Sodium Benzoate, Citric Acid, Disodium EDTA .\n\n🧴 How to Use\nApply to a wet washcloth, loofah, or hands. Massage onto skin to create a rich lather. Rinse thoroughly. Use daily for best results.\n\n✨ Key Benefits\n💧 24HR Hydration: Instantly hydrates for beautiful, healthy-looking skin\n\n✨ Visibly Radiant: Leaves skin looking vibrant and glowing\n\n🌿 Nourishing Formula: Enriched with Vitamin C and Niacinamide\n\n🧴 Premium Body Wash: Rich, fast-absorbing formula for soft, silky skin\n\n🔬 Expert Formulation: Backed by 60 years of Olay beauty science\n\n⚠️ Caution\nFor external use only\n\nAvoid contact with eyes\n\n🏷️ Product Details\nDetail\tInformation\nSize\t591ml (20 FL OZ)\nKey Ingredients\tVitamin C, Vitamin B3 (Niacinamide)\nBenefits\tHydrating, Nourishing, Brightening\n🌙 Blemish Care Exfoliating Korean Full Moon Intense Whitening Mask\nCategory: Face Mask\nBrand: Blemish Care\n\n🌸 Description\nExperience natural fairness and anti-aging with this exfoliating intense whitening mask.\n\nInspired by Korean skincare rituals, this full moon mask is formulated with Gold Dust, Turmeric, and Almond to exfoliate, brighten, and nourish the skin. The powerful combination of ingredients works to promote natural fairness while fighting signs of aging for a radiant, glowing complexion.\n\nSize: 1000ml / 33.8 FL. OZ.\n\n🌿 Key Ingredients\nIngredient\tBenefit\nGold Dust\tHelps brighten and add radiance to the skin\nTurmeric\tPowerful antioxidant that evens skin tone and reduces pigmentation\nAlmond\tNourishes and softens the skin\n🧴 How to Use\nApply a generous layer to clean, dry skin. Leave on for 15-20 minutes. Gently exfoliate while rinsing off with lukewarm water. Use 1-2 times a week.\n\n✨ Key Benefits\n🌙 Intense Whitening: Promotes natural fairness and brightness\n\n🛡️ Anti-Aging: Helps fight signs of aging\n\n🧹 Gentle Exfoliation: Removes dead skin cells for smoother skin\n\n✨ Radiant Glow: Leaves skin looking luminous and healthy\n\n⚠️ Caution\nFor external use only\n\nAvoid contact with eyes\n\nPatch test before full use\n\nUse sunscreen as exfoliating ingredients may increase sun sensitivity\n\n🧴 Advanced Korean Skin Bright & Clear Body Gel Wash\nCategory: Body Wash\nBrand: Advanced Korean Skin\n\n🌸 Description\nLuxury Korean skincare for your body.\n\nThis body gel wash is formulated to brighten and clarify your skin, leaving it fresh, clean, and radiant. Enriched with Korean skin-loving ingredients, it provides a gentle yet effective cleanse.\n\nSize: 1200ml / 42.3 FL.OZ.\n\n🌿 Key Ingredients\nIngredient\tBenefit\nKorean Botanical Extracts\tGently cleanse and nourish the skin\nBrightening Agents\tHelp even skin tone and promote radiance\n🧴 How to Use\nApply to wet skin, massage gently, and rinse thoroughly. Use daily for best results.\n\n✨ Key Benefits\n✨ Brightens and clarifies the skin\n\n🧴 Gentle yet effective cleanse\n\n💧 Leaves skin fresh and radiant\n\n⚠️ Caution\nFor external use only\n\nAvoid contact with eyes\n\n🏷️ Product Details\nDetail\tInformation\nSize\t1200ml / 42.3 FL.OZ.\nKey Benefits\tBrightening, Clarifying\n✨ Duchess Glow Gluta Berry Vitamin Collagen Shower Gel\nCategory: Body Wash / Shower Gel\nBrand: DUCHESS GLOW\n\n🌸 Description\nExtra whitening shower gel for a radiant, glowing complexion.\n\nThis shower gel is formulated with Glutathione, Berry Extract, and Collagen to provide extra whitening and brightening benefits. The gentle, nourishing formula helps promote an even, luminous skin tone while leaving your skin feeling soft and refreshed.\n\nSize: 1000ml / 33.8 fl.oz.\n\n🌿 Key Ingredients\nIngredient\tBenefit\nGlutathione\tA powerful antioxidant that helps brighten and even skin tone\nBerry Extract\tRich in vitamins and antioxidants for skin nourishment\nCollagen\tHelps improve skin elasticity and firmness\nKojic Acid\tA natural skin-lightening agent that helps fade dark spots\n🧴 How to Use\nApply to wet skin, massage gently, and rinse thoroughly. Use daily for best results.\n\n✨ Key Benefits\n✨ Extra Whitening: Helps brighten and even skin tone\n\n🛡️ Antioxidant Protection: Glutathione and berries protect against free radicals\n\n💧 Nourishing: Collagen helps improve skin elasticity\n\n🧴 Gentle Formula: Suitable for daily use\n\n⚠️ Caution\nFor external use only\n\nAvoid contact with eyes\n\n🧴 Clini-tone Mild Lightening Glutathione Enriched Body Wash\nCategory: Body Wash\nBrand: Clini-tone\n\n🌸 Description\nA mild, glutathione-enriched body wash for an all-over glow.\n\nThis gentle body wash is formulated with Glutathione to help lighten and brighten the skin. Enriched with a vanilla scent, it nourishes and moisturizes while providing a radiant, all-over glow. Suitable for all skin types.\n\nSize: 100ml\n\n🌿 Key Ingredients\nIngredient\tBenefit\nGlutathione\tA powerful antioxidant that helps lighten and brighten skin\nNourishing Ingredients\tHelp hydrate and soften the skin\nVanilla\tProvides a pleasant, soothing fragrance\n🧴 How to Use\nApply to wet skin, massage gently, and rinse thoroughly. Use daily for best results.\n\n✨ Key Benefits\n✨ Lightening: Glutathione-enriched for all-over brightening\n\n💧 Mild & Gentle: Suitable for all skin types\n\n🧴 Nourishing: Leaves skin feeling soft and smooth\n\n🌿 Glow-Boosting: Promotes a radiant, even complexion\n\n⚠️ Caution\nFor external use only\n\nAvoid contact with eyes\n\n🏷️ Product Details\nDetail\tInformation\nSize\t100ml\nSkin Type\tAll skin types\nScent\tVanilla\nKey Benefit\tLightening, Brightening, Glow-boosting\n🌿 SKIN1004 Madagascar Centella Asiatica\nCategory: Skincare Ingredient\nBrand: SKIN1004\n\n🌸 Description\nPure Centella Asiatica from Madagascar.\n\nSourced from the pristine island of Madagascar, this powerful skincare ingredient is known for its soothing, healing, and skin-repairing properties. Centella Asiatica is a cornerstone of Korean skincare, celebrated for its ability to calm irritated skin, promote wound healing, and support a healthy skin barrier.\n\n✨ Key Benefits\n🌿 Soothes Irritation: Calms and comforts sensitive or reactive skin\n\n🔄 Promotes Healing: Supports skin repair and regeneration\n\n🧴 Strengthens Skin Barrier: Helps maintain a healthy, resilient skin barrier\n\n💧 Hydrates and Nourishes: Provides deep hydration and nourishment\n\n🌸 Dr. Althea 345 Relief Cream\nCategory: Moisturizer / Cream\nBrand: Dr. Althea\n\n🌸 Description\nA soothing, lightweight moisturizer designed to calm blemishes and restore skin health. \n\nThis vegan, fragrance-free cream is formulated with Niacinamide (10,000ppm), Panthenol (10,000ppm), and Opuntia Ficus-Indica (Prickly Pear) Stem Extract. It provides deep hydration, helps fade dark spots, and calms redness. Its multi-layered gel-cream texture absorbs instantly for a non-greasy finish, making it ideal for all skin types, especially blemish-prone and sensitive skin .\n\nSize: 50ml (1.7 fl oz)\n\nKey Ingredients:\nWater, Propanediol, Glycerin, Niacinamide, Caprylic/Capric Triglyceride, Panthenol, Sodium Hyaluronate, Opuntia Ficus-Indica Stem Extract, Centella Asiatica Leaf Extract, Houttuynia Cordata Extract, Beta-Glucan, Resveratrol, Ceramide NP .\n\n🧴 How to Use\nAfter cleansing and toning, apply a small amount.\n\nGently massage into the skin until fully absorbed.\n\nUse morning and evening as the final step of your routine .\n\n✨ Key Benefits\n🌿 Soothes Irritation: Calms redness and sensitivity .\n\n✨ Targets Blemishes: Niacinamide and plant extracts reduce dark spots and even skin tone .\n\n💧 Deep Hydration: Hyaluronic acid and Panthenol provide long-lasting moisture .\n\n🏷️ Product Details\nDetail\tInformation\nSize\t50ml (1.7 fl oz)\nSkin Type\tAll, especially sensitive/blemish-prone \nFeatures\tVegan, Fragrance-free, Oil-free, Non-comedogenic\n👁️ Mary & May Glutathione Eye Cream\nCategory: Eye Cream\nBrand: Mary & May\n\n🌸 Description\nAn intensive brightening eye cream to combat dark circles and dull skin around the eyes.\n\nThis functional eye cream combines 1,000ppm of Tranexamic Acid and 1,000ppm of Glutathione to effectively brighten dark circles and prevent blemishes from forming. With added Vitamin C, Niacinamide, and Panthenol, it stimulates collagen production, soothes the skin, and improves uneven skin tone . This formula is dermatologically tested and free from 16 harmful ingredients, making it a gentle yet powerful choice for the delicate eye area. It comes as a special set with a free gift of 24g .\n\nSize: 30g + 24g (Special Set)\n\nKey Ingredients:\nWater, Ethylhexyl Palmitate, Glycerin, Niacinamide, Beeswax, Tranexamic Acid (1,000ppm), Betaine, Glutathione (1,000ppm), Panthenol, Hippophae Rhamnoides (Sea Buckthorn) Fruit Oil, Adenosine, Sodium Hyaluronate, Ascorbic Acid (Vitamin C) .\n\n🧴 How to Use\nTake a small, pearl-sized amount.\n\nGently pat and smooth around the eye area using your ring finger.\n\nUse in the morning and evening as part of your skincare routine .\n\n✨ Key Benefits\n✨ Brightens Dark Circles: Tranexamic Acid and Glutathione target pigmentation .\n\n🧴 Improves Skin Tone: Niacinamide and Vitamin C promote a more even complexion.\n\n💧 Soothes and Hydrates: Panthenol and Sea Buckthorn Oil nourish the skin.\n\n🏷️ Product Details\nDetail\tInformation\nSize\t30g + 24g (Special Set)\nKey Concerns\tDark circles, uneven skin tone, freckles\nFeatures\tDermatologically tested, EWG green grade, free from 16 harmful ingredients\n",
+      "basePrice": "200",
+      "comparePrice": "200",
+      "sku": "",
+      "categoryId": "4e5c1f50-c6b4-4738-82f0-58b206e285d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/9e512fa7-1d00-4422-a65b-575657b33963-original.webp",
+          "altText": " Aveeno Skin Relief Body Oil Spray",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/2f85a722-9bcb-44a6-8d4c-f44e06dad2c7-original.webp",
+          "altText": " Aveeno Skin Relief Body Oil Spray",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "4e5c1f50-c6b4-4738-82f0-58b206e285d0",
+        "name": "Face and body oil",
+        "slug": "face-and-body-oil"
+      }
+    },
+    {
+      "id": "1565f0ab-b1f4-492e-af65-0cce1d6bd969",
+      "name": " AmLactin Daily Nourish 12% Lactic Acid Lotion",
+      "slug": "amlactin-daily-nourish-12percent-lactic-acid-lotion",
+      "description": "Clinically proven hydration and gentle exfoliation. This moisturizing lotion contains 12% lactic acid that boosts the skin's natural renewal process through gentle exfoliation. Use daily to reveal softer, smoother, and more radiant skin. Fragrance-free, paraben-free, and non-greasy. Size: 225g / 7.9 oz.\n",
+      "basePrice": "300",
+      "comparePrice": "350",
+      "sku": "",
+      "categoryId": "fbe24419-da5d-4055-9574-bc4b6999a1e3",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/407dbce6-7075-4388-8627-e61baa16271b-original.webp",
+          "altText": " AmLactin Daily Nourish 12% Lactic Acid Lotion",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/ff368f45-c3ac-4c27-9795-f89b8e53fdc7-original.webp",
+          "altText": " AmLactin Daily Nourish 12% Lactic Acid Lotion",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "fbe24419-da5d-4055-9574-bc4b6999a1e3",
+        "name": "🛁 Body Lotion / Milk",
+        "slug": "body-lotion-milk"
+      }
+    },
+    {
+      "id": "1694ddf7-adeb-4bae-8bc1-78d9e9340669",
+      "name": "Blemish Care Malaysian White Wash (Walnut Scrub)",
+      "slug": "blemish-care-malaysian-white-wash-walnut-scrub",
+      "description": "A natural organic formula for deep cleansing. This walnut scrub shower bath is formulated with natural ingredients to provide gentle exfoliation while cleansing the skin. It helps remove dead skin cells and impurities, leaving your skin feeling refreshed and revitalized. Size: 100ml / 3.3 fl.oz.\n",
+      "basePrice": "250",
+      "comparePrice": "279",
+      "sku": "",
+      "categoryId": "bc983437-4e46-4718-ab40-30bc67c218dd",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/7a494906-4b69-4dea-88e8-6576317535f7-original.webp",
+          "altText": "Blemish Care Malaysian White Wash (Walnut Scrub)",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/62a7b370-0189-4502-8773-6bf252cabaf2-original.webp",
+          "altText": "Blemish Care Malaysian White Wash (Walnut Scrub)",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "bc983437-4e46-4718-ab40-30bc67c218dd",
+        "name": "🌸 Essence",
+        "slug": "essence"
+      }
+    },
+    {
+      "id": "16e34433-a6a2-4627-8b62-0af0af92a1c9",
+      "name": " Morrocan Argan Essential Oils Vitamin C Whitening & Glowing Oil",
+      "slug": "morrocan-argan-essential-oils-vitamin-c-whitening-and-glowing-oil",
+      "description": "A powerful 7x whitening oil for face and body. This lightweight oil is formulated with essential oils and Vitamin C to whiten, brighten, and repair damaged skin. Infused with SPF 45, it helps protect against UV damage while stopping the appearance of aging. Size: 320ml / 11.8 fl.oz.\n",
+      "basePrice": "200",
+      "comparePrice": "250",
+      "sku": "",
+      "categoryId": "4e5c1f50-c6b4-4738-82f0-58b206e285d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/ebd34ead-b157-4b2a-8dec-64650e6c16e4-original.webp",
+          "altText": " Morrocan Argan Essential Oils Vitamin C Whitening & Glowing Oil",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/cf0d68dd-7ab4-492e-b9d7-f5fe8d46e52f-original.webp",
+          "altText": " Morrocan Argan Essential Oils Vitamin C Whitening & Glowing Oil",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "4e5c1f50-c6b4-4738-82f0-58b206e285d0",
+        "name": "Face and body oil",
+        "slug": "face-and-body-oil"
+      }
+    },
+    {
+      "id": "1c0bed7c-2f82-4035-9c9e-325b87e98ca1",
+      "name": " Blemish Care Carrot Pure Malaysian Glow Body Lotion",
+      "slug": "blemish-care-carrot-pure-malaysian-glow-body-lotion",
+      "description": "Comprehensive care for a bountiful glow. This body lotion is formulated with carrot extract to provide extra cleansing and UV protection. Infused with SPF 50, it helps protect your skin from harmful UV rays while toning and brightening for a flawless, radiant glow. Size: 30ml.\n",
+      "basePrice": "250",
+      "comparePrice": "198",
+      "sku": "",
+      "categoryId": "fbe24419-da5d-4055-9574-bc4b6999a1e3",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/ac5f46e2-67a5-426a-9f85-4c962d4919b0-original.webp",
+          "altText": " Blemish Care Carrot Pure Malaysian Glow Body Lotion",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/6a5717a8-7ddc-4d08-882d-f9366393d4b6-original.webp",
+          "altText": " Blemish Care Carrot Pure Malaysian Glow Body Lotion",
+          "sortOrder": 2,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/093fb391-d4b0-4d9d-b6fc-5b7e488fabef-original.webp",
+          "altText": " Blemish Care Carrot Pure Malaysian Glow Body Lotion",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "fbe24419-da5d-4055-9574-bc4b6999a1e3",
+        "name": "🛁 Body Lotion / Milk",
+        "slug": "body-lotion-milk"
+      }
+    },
+    {
+      "id": "20f9b75e-e020-43d0-97f9-b1bcc34f49c8",
+      "name": "Guanjing Rice Toner",
+      "slug": "guanjing-rice-toner",
+      "description": "The essence of luminous skin. This rice toner is formulated to improve skin elasticity, lift fine lines, and even skin tone. With a pH of 5.5, it's a non-alcoholic, mineral oil-free formula that hydrates and refines the skin for a smoother, more youthful appearance.\n",
+      "basePrice": "250",
+      "comparePrice": "200",
+      "sku": "",
+      "categoryId": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/bfe6c712-ac2f-442f-958b-d167e596815c-original.webp",
+          "altText": "Guanjing Rice Toner",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+        "name": "🌿 Toner",
+        "slug": "toner"
+      }
+    },
+    {
+      "id": "248d96de-9d60-415a-8ca6-6f26ba7ea1f8",
+      "name": "Skin By Zaron Vitamin C Body Wash",
+      "slug": "skin-by-zaron-vitamin-c-body-wash",
+      "description": "A soothing, creamy body wash that cleanses, brightens, and moisturizes for visibly healthier-looking skin.\n\nInfused with Vitamin C, Glycolic Acid, and Castor Oil, this formula works to exfoliate and nourish, taking away dullness and leaving your skin smoother, brighter, and more radiant . This rich-lathering body wash is suitable for all skin types and offers a multi-action approach to daily cleansing .\n\nSize: 50g (1.7oz)",
+      "basePrice": "250",
+      "comparePrice": "300",
+      "sku": "",
+      "categoryId": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/d4a450c2-eedc-41b5-9448-c5d6fe7a2545-original.webp",
+          "altText": "Skin By Zaron Vitamin C Body Wash",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+        "name": "Body wash",
+        "slug": "body-wash"
+      }
+    },
+    {
+      "id": "277f1a08-ac67-4fca-8bb1-dd940d7fd6a0",
+      "name": " Retin-A Treatment Soap",
+      "slug": "retin-a-treatment-soap",
+      "description": "A prescription-strength treatment soap. Formulated with Retinoid 0.5mg, this soap is designed to treat various skin concerns. Dispensed by pharmacies on doctor's prescription. Net wt: 100g.\n",
+      "basePrice": "250",
+      "comparePrice": "250",
+      "sku": "",
+      "categoryId": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/ee5c34de-7e0d-4861-81e0-6100fbd8c32a-original.webp",
+          "altText": " Retin-A Treatment Soap",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/1d203a46-5340-46e7-904d-a690e993ae6e-original.webp",
+          "altText": " Retin-A Treatment Soap",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/bde681c8-acde-40d7-a05d-fc848c505482-original.webp",
+          "altText": " Retin-A Treatment Soap",
+          "sortOrder": 2,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+        "name": "🧼 Skincare Soap",
+        "slug": "skincare-soap"
+      }
+    },
+    {
+      "id": "2a215aea-68b0-4bd1-9028-0e5278cfb47b",
+      "name": "☕Coffee & Coconut Whitening Scrub",
+      "slug": "coffee-and-coconut-whitening-scrub",
+      "description": "A powerful 100% original coffee and coconut whitening scrub for face and body.\n\nThis invigorating scrub is formulated to target multiple skin concerns including spider veins, wrinkles, green veins, age spots, stretch marks, cellulite, dark spots, and pimples. The natural exfoliating properties of coffee grounds combined with nourishing coconut help smooth and brighten the skin.",
+      "basePrice": "240",
+      "comparePrice": "290",
+      "sku": "",
+      "categoryId": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/1f4958a2-ef13-4404-afd7-ad2e5cdf48b4-original.webp",
+          "altText": "☕Coffee & Coconut Whitening Scrub",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/651e10ac-6476-4132-919c-b500bf0a9497-original.webp",
+          "altText": "☕Coffee & Coconut Whitening Scrub",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+        "name": "🧼 Skincare Soap",
+        "slug": "skincare-soap"
+      }
+    },
+    {
+      "id": "3e64e70d-e100-41cb-a1c7-a5811cf35eb1",
+      "name": " Turmeric Super Whitening Soap",
+      "slug": "turmeric-super-whitening-soap",
+      "description": "Rich in turmeric extracts for fairer, brighter skin. This super whitening soap is formulated to quickly and effectively clean the skin while deeply replenishing and whitening. It solves various skin problems including acne marks, spots, wrinkles, dark knuckles, dark armpits, and dark spots. Net: 250g.\n",
+      "basePrice": "250",
+      "comparePrice": "250",
+      "sku": "",
+      "categoryId": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/bc4c9155-b8a3-4b98-ac8d-8722cae21b72-original.webp",
+          "altText": " Turmeric Super Whitening Soap",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/eee0d02b-e2bc-4e55-b5a8-0907d0500bb9-original.webp",
+          "altText": " Turmeric Super Whitening Soap",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+        "name": "🧼 Skincare Soap",
+        "slug": "skincare-soap"
+      }
+    },
+    {
+      "id": "42c54f7f-96bc-496c-bd7b-5b1d079511c6",
+      "name": "Beleclat Kenacol",
+      "slug": "beleclat-kenacol",
+      "description": "A premium Belgian skincare solution. This topical solution is designed to be mixed with your daily cleansing milk for enhanced skincare benefits. The 30ml bottle offers a concentrated formula that helps improve skin texture and appearance. Made in Belgium.\n",
+      "basePrice": "248",
+      "comparePrice": "250",
+      "sku": "",
+      "categoryId": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/b0e60b36-283a-44da-a369-5dfee17655c4-original.webp",
+          "altText": "Beleclat Kenacol",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/44913d4b-b74b-46ac-b61b-40d1899cffb3-original.webp",
+          "altText": "Beleclat Kenacol",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+        "name": "🧼 Skincare Soap",
+        "slug": "skincare-soap"
+      }
+    },
+    {
+      "id": "48e08366-01e7-40db-8014-0f66c234eba2",
+      "name": " Face Facts Glow + Resurface Lactic Acid AHA Serum",
+      "slug": "face-facts-glow-resurface-lactic-acid-aha-serum",
+      "description": "A gentle exfoliating serum for smoother, brighter skin. \n\nThis lightweight serum is powered by 3% Lactic Acid, a gentle alpha-hydroxy acid (AHA), to gently buff away dead skin cells and retexturise the skin . Formulated with calming Aloe Vera and Peach extract, it helps to refine skin texture, improve uneven skin tone, and promote a radiant, glowing complexion . This vegan formula is suitable for all skin types, especially for those concerned with dullness or uneven skin texture .\n\nSize: 30ml / 1.01 fl. oz.\n\n",
+      "basePrice": "250",
+      "comparePrice": "250",
+      "sku": "",
+      "categoryId": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/c245a6a7-a5b6-4bea-a6b5-e0c086aaa846-original.webp",
+          "altText": " Face Facts Glow + Resurface Lactic Acid AHA Serum",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/b9608312-162a-4c22-82ad-4b5d9c57f8e8-original.webp",
+          "altText": " Face Facts Glow + Resurface Lactic Acid AHA Serum",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+        "name": "💧 Serum",
+        "slug": "serum"
+      }
+    },
+    {
+      "id": "4f25685f-59a0-4ce9-b093-6ae71187b73c",
+      "name": "G Glow Soap",
+      "slug": "g-glow-soap",
+      "description": "Experience hydrated, youthful skin with this glow-enhancing and spot-fading soap.\n\nThis multi-tasking beauty bar is designed to gently cleanse while helping to reveal a smoother, more radiant complexion. Its anti-aging formula works to fade dark spots and blemishes, promoting a more even and youthful skin tone with regular use. Perfect for daily use to maintain a clear, refreshed look.",
+      "basePrice": "100",
+      "comparePrice": "100",
+      "sku": "",
+      "categoryId": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/2156b5f7-f7d8-4e79-8de6-057bce68fb95-original.webp",
+          "altText": "G Glow Soap",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/6c3dd1f4-5c82-4c84-91fd-629ec15b7de0-original.webp",
+          "altText": "G Glow Soap",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+        "name": "🧼 Skincare Soap",
+        "slug": "skincare-soap"
+      }
+    },
+    {
+      "id": "56464e50-cbe5-4d73-a1ef-2439310c578b",
+      "name": " LAIT SNAPTCHAT DIAMANT BLEU Body Milk",
+      "slug": "lait-snaptchat-diamant-bleu-body-milk",
+      "description": "Intense nourishment for a luminous glow. This high whitening body milk is formulated with Glutathione, Collagen, and Kouji Carbutin to intensely nourish and brighten the skin. It works to promote a more even and radiant complexion all over the body.\n",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "fbe24419-da5d-4055-9574-bc4b6999a1e3",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/b6bc22b6-af08-4be0-a34f-e799fe6228ef-original.webp",
+          "altText": " LAIT SNAPTCHAT DIAMANT BLEU Body Milk",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/c0f494d3-0523-416a-8f76-d24c990b7d22-original.webp",
+          "altText": " LAIT SNAPTCHAT DIAMANT BLEU Body Milk",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "fbe24419-da5d-4055-9574-bc4b6999a1e3",
+        "name": "🛁 Body Lotion / Milk",
+        "slug": "body-lotion-milk"
+      }
+    },
+    {
+      "id": "59799ae0-b0de-4f23-9808-6dc6e8c4cb07",
+      "name": "Vitamin C Body Scrub",
+      "slug": "vitamin-c-body-scrub",
+      "description": "Reveal fresh, healthy, and younger-looking skin with this antioxidant-rich body scrub.\n\nLoaded with Vitamin C and antioxidants, this deep exfoliating scrub works to stimulate blood flow and promote circulation while gently removing dead skin cells. The luxurious formula helps detoxify the body and improve skin hydration, leaving your skin feeling refreshed, renewed, and radiant.",
+      "basePrice": "250",
+      "comparePrice": "290",
+      "sku": "",
+      "categoryId": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/b846d024-aa95-4e51-9797-db4ec15caa6e-original.webp",
+          "altText": "Vitamin C Body Scrub",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/d46ac580-cd7f-42b9-be6a-f3d9959d068a-original.webp",
+          "altText": "Vitamin C Body Scrub",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+        "name": "🧼 Skincare Soap",
+        "slug": "skincare-soap"
+      }
+    },
+    {
+      "id": "663fcea3-7b3f-447f-a5c6-b5cf52db0a8f",
+      "name": " SKIN1004 Madagascar Centella Asiatica",
+      "slug": "skin1004-madagascar-centella-asiatica",
+      "description": "Pure Centella Asiatica from Madagascar.\n\nSourced from the pristine island of Madagascar, this powerful skincare ingredient is known for its soothing, healing, and skin-repairing properties. Centella Asiatica is a cornerstone of Korean skincare, celebrated for its ability to calm irritated skin, promote wound healing, and support a healthy skin barrier.",
+      "basePrice": "230",
+      "comparePrice": "250",
+      "sku": "",
+      "categoryId": "98836f15-1be2-43f5-a63a-021bb5970b38",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/9fcbab2a-dff7-41dc-aacc-cd439924c967-original.webp",
+          "altText": " SKIN1004 Madagascar Centella Asiatica",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "98836f15-1be2-43f5-a63a-021bb5970b38",
+        "name": "🌟Beauty and health",
+        "slug": "beauty-and-health"
+      }
+    },
+    {
+      "id": "680fe692-0154-49dc-afc5-b2cb83deff0b",
+      "name": " Niu Skin Total Effects Platinum White Face Essence Lotion",
+      "slug": "niu-skin-total-effects-platinum-white-face-essence-lotion",
+      "description": "A complete brightening and whitening solution. This face essence lotion is formulated with Alpha Arbutin, Niacinamide, and Vitamin C to brighten and whiten the skin. Enriched with plant extracts and Hyaluronic Acid, it soothes and hydrates while providing SPF 20 sun protection. Size: 50ml / 1.7 Fl.Oz.\n",
+      "basePrice": "250",
+      "comparePrice": "200",
+      "sku": "",
+      "categoryId": "bc983437-4e46-4718-ab40-30bc67c218dd",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/faafb921-6d68-4c25-ab31-d48287adcb0c-original.webp",
+          "altText": " Niu Skin Total Effects Platinum White Face Essence Lotion",
+          "sortOrder": 2,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/86065937-eb93-4b78-a8e1-a6538f94aaca-original.webp",
+          "altText": " Niu Skin Total Effects Platinum White Face Essence Lotion",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/52ceb438-8b84-4bf8-b1e2-52afe13bc78e-original.webp",
+          "altText": " Niu Skin Total Effects Platinum White Face Essence Lotion",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "bc983437-4e46-4718-ab40-30bc67c218dd",
+        "name": "🌸 Essence",
+        "slug": "essence"
+      }
+    },
+    {
+      "id": "6bb5222a-1dfc-4a4d-999c-ce6a0d051c13",
+      "name": "Good Molecules Discoloration Correcting Serum",
+      "slug": "good-molecules-discoloration-correcting-serum",
+      "description": "Targeted correction for a perfectly balanced complexion. This potent serum is specifically designed to target hyperpigmentation, dark spots, acne scars, and melasma. . It utilizes an advanced form of tranexamic acid (2% TeraCeutic TXVector) and 4% Niacinamide to visibly improve the appearance of uneven skin tone and texture. The lightweight formula is free from fragrance, PEGs, mineral oils, and alcohol ",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/f109b5d8-a072-4fd0-ae7b-6e738c58264a-original.webp",
+          "altText": "Good Molecules Discoloration Correcting Serum",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+        "name": "💧 Serum",
+        "slug": "serum"
+      }
+    },
+    {
+      "id": "6c0f9788-8d9a-4116-b4db-1cd73175bb5d",
+      "name": " Duchess Glow Gluta Berry Vitamin Collagen Shower Gel",
+      "slug": "duchess-glow-gluta-berry-vitamin-collagen-shower-gel",
+      "description": "Extra whitening shower gel for a radiant, glowing complexion.\n\nThis shower gel is formulated with Glutathione, Berry Extract, and Collagen to provide extra whitening and brightening benefits. The gentle, nourishing formula helps promote an even, luminous skin tone while leaving your skin feeling soft and refreshed.\n\nSize: 1000ml / 33.8 fl.oz.",
+      "basePrice": "230",
+      "comparePrice": "230",
+      "sku": "",
+      "categoryId": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/775e0fa1-4119-491b-9c35-959f256aff55-original.webp",
+          "altText": " Duchess Glow Gluta Berry Vitamin Collagen Shower Gel",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/d8125890-fc42-44d0-bdc0-8b83d01d8d16-original.webp",
+          "altText": " Duchess Glow Gluta Berry Vitamin Collagen Shower Gel",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+        "name": "Body wash",
+        "slug": "body-wash"
+      }
+    },
+    {
+      "id": "7157acfb-68bc-4660-9740-5bac496e4c76",
+      "name": "Face Facts Nourish+ Ceramide Restore Serum",
+      "slug": "face-facts-nourish-ceramide-restore-serum",
+      "description": "Soothe, protect, and hydrate stressed skin. This nourishing serum is formulated with 3 Ceramides to restore and protect the skin barrier. It soothes and hydrates dehydrated skin, promoting a healthier, more resilient complexion. Suitable for AM and PM use. Vegan. Size: 30ml / 1.01 fl.oz.\n",
+      "basePrice": "250",
+      "comparePrice": "225",
+      "sku": "",
+      "categoryId": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/d32b8e14-0930-415e-a4af-9919b4cf19d1-original.webp",
+          "altText": "Face Facts Nourish+ Ceramide Restore Serum",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/75269400-db4b-490a-adb0-341cc472a6ac-original.webp",
+          "altText": "Face Facts Nourish+ Ceramide Restore Serum",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+        "name": "💧 Serum",
+        "slug": "serum"
+      }
+    },
+    {
+      "id": "754d17fe-4953-41c4-bdba-a13183b80262",
+      "name": "SKIN1004 Madagascar Centella Tone Brightening Capsule Ampoule",
+      "slug": "skin1004-madagascar-centella-tone-brightening-capsule-ampoule",
+      "description": "Intensive care for extraordinary results. A potent ampoule made with pure Centella Asiatica from Madagascar. It is designed to deliver a tone-brightening boost while soothing and calming the skin. This concentrated treatment is your go-to for a radiant and healthy glow.\n",
+      "basePrice": "250",
+      "comparePrice": "200",
+      "sku": "",
+      "categoryId": "6772f431-077b-43a8-b102-e67d6dc589c2",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/362459bf-bd1d-414a-b851-6a9b53977404-original.webp",
+          "altText": "SKIN1004 Madagascar Centella Tone Brightening Capsule Ampoule",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "6772f431-077b-43a8-b102-e67d6dc589c2",
+        "name": "✦ Ampoule",
+        "slug": "ampoule"
+      }
+    },
+    {
+      "id": "7a1fdbbb-ee6d-4c20-b598-9f4e0e9489f5",
+      "name": " Dr. Newhar Rose Water Facial Toner",
+      "slug": "dr-newhar-rose-water-facial-toner",
+      "description": "A refreshing and hydrating toner for your skin. This rose water facial toner is enriched with hydrating properties to soothe, refresh, and revitalize your skin. The gentle formula helps balance your skin's pH and prepares it for better absorption of subsequent products.\n",
+      "basePrice": "250",
+      "comparePrice": "225",
+      "sku": "",
+      "categoryId": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/f1401036-5bd9-4332-a006-d80a52e69584-original.webp",
+          "altText": " Dr. Newhar Rose Water Facial Toner",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/692e561e-6e25-46c0-9671-b2dc3928c04c-original.webp",
+          "altText": " Dr. Newhar Rose Water Facial Toner",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+        "name": "🌿 Toner",
+        "slug": "toner"
+      }
+    },
+    {
+      "id": "819ee790-2ee9-4235-9cd1-2e96a6395b1d",
+      "name": "Cos De BAHA AN Serum (Arbutin Niacinamide)",
+      "slug": "cos-de-baha-an-serum-arbutin-niacinamide",
+      "description": "",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/be53aa27-2583-4409-b7ed-42a2a5f47a15-original.webp",
+          "altText": "Cos De BAHA AN Serum (Arbutin Niacinamide)",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+        "name": "💧 Serum",
+        "slug": "serum"
+      }
+    },
+    {
+      "id": "82a8e154-9716-4cb4-b682-0437eeb6d972",
+      "name": "FITGUM Extra Strength Apple Cider Vinegar Gummies",
+      "slug": "fitgum-extra-strength-apple-cider-vinegar-gummies",
+      "description": "Extra strength apple cider vinegar gummies. This dietary supplement is a delicious and effective way to enjoy the natural benefits of apple cider vinegar, enhanced with beetroot, pomegranate, and vitamins B9 & B12. It contains 60 organic gummies.",
+      "basePrice": "199",
+      "comparePrice": "230",
+      "sku": "",
+      "categoryId": "77566a51-bcd0-4b5c-a2df-01aaaf03938c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/2575e479-dd99-480d-bf0b-723d79f82a18-original.webp",
+          "altText": "FITGUM Extra Strength Apple Cider Vinegar Gummies",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/f87044e2-19b0-4d0d-9346-c062d4452539-original.webp",
+          "altText": "FITGUM Extra Strength Apple Cider Vinegar Gummies",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "77566a51-bcd0-4b5c-a2df-01aaaf03938c",
+        "name": "💊 Dietary Supplement",
+        "slug": "dietary-supplement"
+      }
+    },
+    {
+      "id": "85dff5f5-3033-4bf9-87c3-bfd62a03bcca",
+      "name": "Estelin Rejuvenate Toner",
+      "slug": "estelin-rejuvenate-toner",
+      "description": "The perfect prelude to radiance. This alkaline hydrating toner is formulated with Salicylic Acid and Lactobionic Acid to gently exfoliate and smooth skin texture. It works to reveal a glowing, more refined complexion, making it the ideal first step in your skincare routine.\n",
+      "basePrice": "250",
+      "comparePrice": "300",
+      "sku": "",
+      "categoryId": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/37447e7a-4eda-429a-b9f7-77822156fe40-original.webp",
+          "altText": "Estelin Rejuvenate Toner",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+        "name": "🌿 Toner",
+        "slug": "toner"
+      }
+    },
+    {
+      "id": "87c05c9e-2526-4b0c-9f75-1975f3f56938",
+      "name": "Blemish Care Exfoliating Korean Full Moon Intense Whitening Mask",
+      "slug": "blemish-care-exfoliating-korean-full-moon-intense-whitening-mask",
+      "description": "Experience natural fairness and anti-aging with this exfoliating intense whitening mask.\n\nInspired by Korean skincare rituals, this full moon mask is formulated with Gold Dust, Turmeric, and Almond to exfoliate, brighten, and nourish the skin. The powerful combination of ingredients works to promote natural fairness while fighting signs of aging for a radiant, glowing complexion.\n\nSize: 1000ml / 33.8 FL. OZ.",
+      "basePrice": "230",
+      "comparePrice": "250",
+      "sku": "",
+      "categoryId": "7f925fd9-ba9b-4af6-92ac-131c928b7773",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/aa085e3b-91bb-4a72-80ff-ee1136c0656a-original.webp",
+          "altText": "Blemish Care Exfoliating Korean Full Moon Intense Whitening Mask",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/6104a552-755d-4c29-8d0d-209c48c39880-original.webp",
+          "altText": "Blemish Care Exfoliating Korean Full Moon Intense Whitening Mask",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "7f925fd9-ba9b-4af6-92ac-131c928b7773",
+        "name": "☀️Facial Cleanser / Face Wash",
+        "slug": "facial-cleanser-face-wash"
+      }
+    },
+    {
+      "id": "8f113ddc-0a6c-41b9-a98e-3b3b39d04d55",
+      "name": " ESTELIN Rosehip Niacinamide Spots Fading Face Serum",
+      "slug": "estelin-rosehip-niacinamide-spots-fading-face-serum",
+      "description": "A targeted solution for a clearer complexion. This serum is formulated with Rosehip and Niacinamide to help fade dark spots, acne blemishes, and age spots. It's designed to promote a more even, radiant skin tone.\n",
+      "basePrice": "250",
+      "comparePrice": "200",
+      "sku": "",
+      "categoryId": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/06fbab1f-8f30-4f86-90a9-b934a9f650d8-original.webp",
+          "altText": " ESTELIN Rosehip Niacinamide Spots Fading Face Serum",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/dae59544-9d4e-4ac3-b311-c7432f633654-original.webp",
+          "altText": " ESTELIN Rosehip Niacinamide Spots Fading Face Serum",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+        "name": "💧 Serum",
+        "slug": "serum"
+      }
+    },
+    {
+      "id": "9181e79a-dbef-407d-b11f-c83099b70bcb",
+      "name": "Face Facts Firm+ Revitalise Polypeptide Serum",
+      "slug": "face-facts-firm-revitalise-polypeptide-serum",
+      "description": "Target the signs of aging with powerful peptides. This firming serum is formulated with Polypeptides and Rice extract to smooth the appearance of fine lines and wrinkles. It revitalizes and firms the skin, promoting a more youthful and radiant complexion. Suitable for AM and PM use. Vegan. Size: 30ml / 1.01 fl.oz.\n",
+      "basePrice": "250",
+      "comparePrice": "225",
+      "sku": "",
+      "categoryId": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/9b362f73-674f-4229-86e6-77059c1a1c9c-original.webp",
+          "altText": "Face Facts Firm+ Revitalise Polypeptide Serum",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/610fcf35-3ac2-4f8f-839f-8461cef8e651-original.webp",
+          "altText": "Face Facts Firm+ Revitalise Polypeptide Serum",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+        "name": "💧 Serum",
+        "slug": "serum"
+      }
+    },
+    {
+      "id": "961d7f54-dccc-47a6-b30a-3370beb14d3d",
+      "name": "Gana Sachi Plus Evening Primrose Oil",
+      "slug": "gana-sachi-plus-evening-primrose-oil",
+      "description": "A powerful oil blend for overall wellness. This evening primrose oil supplement is enriched with Omega 3, 6, and 9, along with Almond, Walnut, Red Pine, and Aloe Vera extracts. It supports heart health, improves vision, helps stabilize blood pressure, and promotes healthier, more youthful skin.\n",
+      "basePrice": "350",
+      "comparePrice": "400",
+      "sku": "",
+      "categoryId": "77566a51-bcd0-4b5c-a2df-01aaaf03938c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/6c067787-d10f-4ca2-a450-04c3bbd86218-original.webp",
+          "altText": "Gana Sachi Plus Evening Primrose Oil",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/a78a0f5c-b593-433a-b5a7-433e8dfe11d1-original.webp",
+          "altText": "Gana Sachi Plus Evening Primrose Oil",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "77566a51-bcd0-4b5c-a2df-01aaaf03938c",
+        "name": "💊 Dietary Supplement",
+        "slug": "dietary-supplement"
+      }
+    },
+    {
+      "id": "962d41d7-33e0-4e76-9750-944a0ff537f4",
+      "name": " COSRX Advanced Snail 92 All in One Cream",
+      "slug": "cosrx-advanced-snail-92-all-in-one-cream",
+      "description": "The final touch of perfection. This cream is formulated with 92% Snail Secretion Filtrate (Mucin) to deeply moisturize and repair the skin barrier. It helps naturally create a healthy, radiant glow while improving skin texture and elasticity. The perfect crowning step to your skincare symphony.\n",
+      "basePrice": "250",
+      "comparePrice": "200",
+      "sku": "",
+      "categoryId": "30626755-2744-4244-989a-3b545eea922b",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/2a6e1889-e455-4890-bbc0-1a9b6f332f32-original.webp",
+          "altText": " COSRX Advanced Snail 92 All in One Cream",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/bcced4e5-9509-46c3-be9c-81abe2978f15-original.webp",
+          "altText": " COSRX Advanced Snail 92 All in One Cream",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "30626755-2744-4244-989a-3b545eea922b",
+        "name": "🧴 Moisturizer / Cream",
+        "slug": "moisturizer-cream"
+      }
+    },
+    {
+      "id": "9d503786-a100-4d6e-a6ce-0fd035dca587",
+      "name": " Niu Skin Bright & Clear Face Cream",
+      "slug": "niu-skin-bright-and-clear-face-cream",
+      "description": "For beauty and love — your ultimate brightening cream. This face cream is formulated with Kojic Acid and plant extracts to brighten, fade dark spots, and even skin tone. It helps combat acne while promoting a clear, radiant complexion. Size: 50ml / 1.7 Fl Oz.\n",
+      "basePrice": "250",
+      "comparePrice": "300",
+      "sku": "",
+      "categoryId": "30626755-2744-4244-989a-3b545eea922b",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/ca495ac4-652f-483d-90c7-7d3d575680ac-original.webp",
+          "altText": " Niu Skin Bright & Clear Face Cream",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/035982e8-e0bc-4df0-a402-4051e410258b-original.webp",
+          "altText": " Niu Skin Bright & Clear Face Cream",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/346bb3a4-01d5-4ecd-a1ec-8d3d782f036d-original.webp",
+          "altText": " Niu Skin Bright & Clear Face Cream",
+          "sortOrder": 2,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "30626755-2744-4244-989a-3b545eea922b",
+        "name": "🧴 Moisturizer / Cream",
+        "slug": "moisturizer-cream"
+      }
+    },
+    {
+      "id": "a02f9b79-cf7c-4a50-b7aa-e4d1e18f36f6",
+      "name": " Dove Beauty Cream Bar",
+      "slug": "dove-beauty-cream-bar",
+      "description": "Deep moisture for soft, nourished skin. This beauty cream bar is a 3-in-1 formula that cleanses, hydrates, and nourishes your skin. Dermatologically approved, it contains 100% plant-based nourishing actives and is suitable for face and body. Gentle enough for daily use. Net wt: 90g / 3.17 oz.\n",
+      "basePrice": "20",
+      "comparePrice": "25",
+      "sku": "",
+      "categoryId": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/c1fd04e6-b61b-4519-8495-602d2e616f46-original.webp",
+          "altText": " Dove Beauty Cream Bar",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/04c99249-666e-420c-8705-a95d45c63596-original.webp",
+          "altText": " Dove Beauty Cream Bar",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+        "name": "🧼 Skincare Soap",
+        "slug": "skincare-soap"
+      }
+    },
+    {
+      "id": "a37e4c17-bbdc-4732-bf4a-511f130fae56",
+      "name": " Kojie-San Skin Lightening Soap",
+      "slug": "kojie-san-skin-lightening-soap",
+      "description": "A trusted skin lightening soap. Formulated with Kojic Acid, this soap helps lighten dark spots, even skin tone, and promote a brighter complexion. A popular choice for those seeking effective skin lightening.\n",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/ecc3b59c-e24b-4f1e-8de0-a78a9e30cc83-original.webp",
+          "altText": " Kojie-San Skin Lightening Soap",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+        "name": "🧼 Skincare Soap",
+        "slug": "skincare-soap"
+      }
+    },
+    {
+      "id": "a8cb6bf2-cab1-4f33-b853-4d78241bd4db",
+      "name": " DR.ALTHEA Gentle Vitamin C Serum",
+      "slug": "dralthea-gentle-vitamin-c-serum",
+      "description": "A gentle daily boost of radiance. This serum is formulated with 20% Hippophae Rhamnoides (Sea Buckthorn) Fruit Water and Vitamin C to brighten and protect the skin. It's a gentle, effective formula for daily use, helping to promote a more luminous and even complexion.\n",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/b29ac975-0ce8-4f6b-8fb5-654be08c87d0-original.webp",
+          "altText": " DR.ALTHEA Gentle Vitamin C Serum",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/19fd907d-0b9b-46ea-8738-e7d7f6deb0f7-original.webp",
+          "altText": " DR.ALTHEA Gentle Vitamin C Serum",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+        "name": "💧 Serum",
+        "slug": "serum"
+      }
+    },
+    {
+      "id": "aaeb1611-2a95-4b2f-9713-64c209201022",
+      "name": " Asantee Salt Spa Turmeric & Ginger Soap",
+      "slug": "asantee-salt-spa-turmeric-and-ginger-soap",
+      "description": "Revitalize and rejuvenate your skin with natural herbal and fruit extracts. This unique salt spa soap is developed with Turmeric and Ginger to revitalize your skin, leaving your body looking and feeling fantastic. Use daily for a refreshed and glowing complexion. Net wt: 700ml.\n",
+      "basePrice": "250",
+      "comparePrice": "300",
+      "sku": "",
+      "categoryId": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/bafe9b9b-d699-4c76-b9ef-b34c88dadb64-original.webp",
+          "altText": " Asantee Salt Spa Turmeric & Ginger Soap",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/673cac8f-3491-4fc4-b275-4c7eddab3254-original.webp",
+          "altText": " Asantee Salt Spa Turmeric & Ginger Soap",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+        "name": "Body wash",
+        "slug": "body-wash"
+      }
+    },
+    {
+      "id": "ab800d6d-ffd3-4983-8de2-383e43c5e4e6",
+      "name": "Cos De BAHA TT Serum (Tranexamic Acid)",
+      "slug": "cos-de-baha-tt-serum-tranexamic-acid",
+      "description": "A serum formulated with 10% Tranexamic Acid. Comes in a 30ml / 1.0 fl oz bottle.Intensive care for extraordinary results. This potent serum is formulated with 10% Tranexamic Acid, a powerful ingredient for fading stubborn dark spots and hyperpigmentation. It's designed to deliver fast-acting, visible results for a clearer, more even-toned complexion",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/d3a1af1e-b0d0-4747-904f-c1797861277a-original.webp",
+          "altText": "Cos De BAHA TT Serum (Tranexamic Acid)",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/eeef1c8c-9503-4047-a4c5-f3b1753dda3e-original.webp",
+          "altText": "Cos De BAHA TT Serum (Tranexamic Acid)",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+        "name": "💧 Serum",
+        "slug": "serum"
+      }
+    },
+    {
+      "id": "afe9da14-a101-411f-9fd4-50639127167e",
+      "name": " Asantee Carrot with Honey Soap",
+      "slug": "asantee-carrot-with-honey-soap",
+      "description": "A nourishing lightening soap from Thailand. This herbal soap is formulated with Carrot Extract, Glutathione, and Vitamin C to detoxify acne, reduce wrinkles, and combat aging. It provides essential nutrients to the skin, leaving it clean, bright, and rejuvenated.\n",
+      "basePrice": "250",
+      "comparePrice": "250",
+      "sku": "",
+      "categoryId": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/041245cf-ea80-474a-8cd0-dfcc7379c3e5-original.webp",
+          "altText": " Asantee Carrot with Honey Soap",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/01da14fe-3204-4ce0-95aa-a0992894d8cd-original.webp",
+          "altText": " Asantee Carrot with Honey Soap",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+        "name": "🧼 Skincare Soap",
+        "slug": "skincare-soap"
+      }
+    },
+    {
+      "id": "b1dc0cd1-e11b-4fb2-ba23-57b96e2c99f3",
+      "name": " Clini-tone Mild Lightening Glutathione Enriched Body Wash",
+      "slug": "clini-tone-mild-lightening-glutathione-enriched-body-wash",
+      "description": "A mild, glutathione-enriched body wash for an all-over glow.\n\nThis gentle body wash is formulated with Glutathione to help lighten and brighten the skin. Enriched with a vanilla scent, it nourishes and moisturizes while providing a radiant, all-over glow. Suitable for all skin types.",
+      "basePrice": "220",
+      "comparePrice": "240",
+      "sku": "",
+      "categoryId": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/4563548d-829c-4886-baa2-6a15d181b4d3-original.webp",
+          "altText": " Clini-tone Mild Lightening Glutathione Enriched Body Wash",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/9c198570-c4c0-4b92-8e3a-0f28d77cba82-original.webp",
+          "altText": " Clini-tone Mild Lightening Glutathione Enriched Body Wash",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+        "name": "Body wash",
+        "slug": "body-wash"
+      }
+    },
+    {
+      "id": "b23e1f60-9fff-4d88-9f13-da6165c7f2c5",
+      "name": "Advanced Korean Skin Bright & Clear Body Gel Wash",
+      "slug": "advanced-korean-skin-bright-and-clear-body-gel-wash",
+      "description": "Luxury Korean skincare for your body. This body gel wash is formulated to brighten and clarify your skin, leaving it fresh, clean, and radiant. Enriched with Korean skin-loving ingredients, it provides a gentle yet effective cleanse. Size: 1200ml / 42.3 FL.OZ.\n",
+      "basePrice": "250",
+      "comparePrice": "299",
+      "sku": "",
+      "categoryId": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/421ba443-1012-4fd2-8e5a-19ae46c84ce4-original.webp",
+          "altText": "Advanced Korean Skin Bright & Clear Body Gel Wash",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/f1b5c4fc-f642-4b3c-b01c-8d92b87bf323-original.webp",
+          "altText": "Advanced Korean Skin Bright & Clear Body Gel Wash",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+        "name": "Body wash",
+        "slug": "body-wash"
+      }
+    },
+    {
+      "id": "b2f09fd7-9353-40be-8f2a-8d55afd53edc",
+      "name": " JUMISO Snail Mucin 95 Peptide Facial Essence",
+      "slug": "jumiso-snail-mucin-95-peptide-facial-essence",
+      "description": "The soul of Korean skincare. This essence is formulated with 95% Snail Secretion Filtrate and Peptides to deeply moisturize and improve skin texture. Non-comedogenic and packed with skin-loving ingredients, it's a luxurious step to achieving a dewy, plump, and impossibly radiant complexion.\n",
+      "basePrice": "250",
+      "comparePrice": "200",
+      "sku": "",
+      "categoryId": "bc983437-4e46-4718-ab40-30bc67c218dd",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/2950cbb8-8cd9-42ab-a99c-4385b4705fa5-original.webp",
+          "altText": " JUMISO Snail Mucin 95 Peptide Facial Essence",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "bc983437-4e46-4718-ab40-30bc67c218dd",
+        "name": "🌸 Essence",
+        "slug": "essence"
+      }
+    },
+    {
+      "id": "b3bafd62-961b-4fe6-a70b-3fa28c66516a",
+      "name": " Advanced Korean Skin Bright & Clear Body Gel Wash",
+      "slug": "advanced-korean-skin-bright-and-clear-body-gel-wash-704vwj",
+      "description": "Luxury Korean skincare for your body.\n\nThis body gel wash is formulated to brighten and clarify your skin, leaving it fresh, clean, and radiant. Enriched with Korean skin-loving ingredients, it provides a gentle yet effective cleanse.\n\nSize: 1200ml / 42.3 FL.OZ.",
+      "basePrice": "200",
+      "comparePrice": "205",
+      "sku": "",
+      "categoryId": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/564eecd3-6bb8-4141-8828-240d34b59724-original.webp",
+          "altText": " Advanced Korean Skin Bright & Clear Body Gel Wash",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+        "name": "Body wash",
+        "slug": "body-wash"
+      }
+    },
+    {
+      "id": "b5aa739d-e20c-45bf-99ec-5bfe1def66c9",
+      "name": "COSRX Centella Water Alcohol-Free Toner",
+      "slug": "cosrx-centella-water-alcohol-free-toner",
+      "description": "The perfect prelude to radiance. A gentle, refreshing embrace for your skin after every cleanse. This alcohol free, spray type toner is formulated with 10% Centella Asiatica Leaf Water and 84.69% Jeju Mineral Water to calm and soothe irritated, sensitive skin . It restores your skin's natural pH balance, preps it for better absorption, and delivers a surge of hydration without any irritation.",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/07f0e03f-6535-47cc-b16d-0a051c845ddb-original.webp",
+          "altText": "COSRX Centella Water Alcohol-Free Toner",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+        "name": "🌿 Toner",
+        "slug": "toner"
+      }
+    },
+    {
+      "id": "b7d29c19-ac79-413f-aca4-293f9ba295e4",
+      "name": "The Ordinary Alpha Arbutin 2% + HA",
+      "slug": "the-ordinary-alpha-arbutin-2percent-ha",
+      "description": "Visible brightening with deep hydration. This water-based serum is designed to target uneven skin tone and dark spots . It combines a high concentration of purified Alpha Arbutin, a known skin-brightening ingredient, with Hyaluronic Acid to support effective product absorption . A powerful, yet gentle formula for a more radiant and even complexion.",
+      "basePrice": "250",
+      "comparePrice": "200",
+      "sku": "",
+      "categoryId": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/ef84e647-242d-4199-a95d-fd75df59ca51-original.webp",
+          "altText": "The Ordinary Alpha Arbutin 2% + HA",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+        "name": "💧 Serum",
+        "slug": "serum"
+      }
+    },
+    {
+      "id": "b8120dce-1269-4fa1-9842-334bcb39c261",
+      "name": " Fruiser Premium Double Moisturising Shower Cream (Goat's Milk & Papaya)",
+      "slug": "fruiser-premium-double-moisturising-shower-cream-goats-milk-and-papaya",
+      "description": "Nourish and moisturize your skin with premium care. This double moisturising shower cream is formulated with Goat's Milk and Papaya to deeply nourish and hydrate your skin. It leaves your body feeling soft, smooth, and pampered with every shower.\n",
+      "basePrice": "200",
+      "comparePrice": "219",
+      "sku": "",
+      "categoryId": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/2301d56a-9ec9-41d4-84c8-82f1dc9eab05-original.webp",
+          "altText": " Fruiser Premium Double Moisturising Shower Cream (Goat's Milk & Papaya)",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/06789f2b-a952-4146-b627-e730a295de6e-original.webp",
+          "altText": " Fruiser Premium Double Moisturising Shower Cream (Goat's Milk & Papaya)",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+        "name": "Body wash",
+        "slug": "body-wash"
+      }
+    },
+    {
+      "id": "c5cb6097-9eb8-4e82-afdc-042b269d62dc",
+      "name": " Glowing Secret Collagen Powder (Nourish + Glow)",
+      "slug": "glowing-secret-collagen-powder-nourish-glow",
+      "description": "Nourish your beauty from within. This collagen powder is formulated with Hyaluronic Acid to support skin, hair, nails, joints, and gut health. The nourishing vanilla-flavored powder helps promote a healthy, glowing complexion from the inside out. Size: 454g / 1 lb.\n",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "77566a51-bcd0-4b5c-a2df-01aaaf03938c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/0523db0c-59dc-49b9-81b3-a28881e86108-original.webp",
+          "altText": " Glowing Secret Collagen Powder (Nourish + Glow)",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/8fc9bc95-459b-4dd2-b433-7192c98c86d0-original.webp",
+          "altText": " Glowing Secret Collagen Powder (Nourish + Glow)",
+          "sortOrder": 2,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/eed1fb02-e742-4dea-9e5f-eedaf35c3095-original.webp",
+          "altText": " Glowing Secret Collagen Powder (Nourish + Glow)",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "77566a51-bcd0-4b5c-a2df-01aaaf03938c",
+        "name": "💊 Dietary Supplement",
+        "slug": "dietary-supplement"
+      }
+    },
+    {
+      "id": "c7d8f401-db84-435e-9a45-3886c6dbba78",
+      "name": "Estelin  Repair Toner",
+      "slug": "estelin-repair-toner",
+      "description": "A revitalizing first step to recovery. This toner is certified with Vitamin B5 to repair and enhance skin elasticity. It's a soothing formula that helps to restore and revitalize the skin, preparing it for the rest of your skincare routine.\n",
+      "basePrice": "280",
+      "comparePrice": "250",
+      "sku": "",
+      "categoryId": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/630f1358-7496-45b9-a81a-c496838a1bb9-original.webp",
+          "altText": " ESTELLA Repair Toner",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+        "name": "🌿 Toner",
+        "slug": "toner"
+      }
+    },
+    {
+      "id": "ca7c5ba5-d414-4359-ad36-4fec8205a511",
+      "name": " Face Facts Firm + Revitalise Collagen Serum",
+      "slug": "face-facts-firm-revitalise-collagen-serum",
+      "description": "Improve your skin's youthful elasticity and firmness with our Collagen Serum. Formulated with restoring Collagen and nourishing Amino Acids, it gets to work on the visible signs of ageing, gently hydrating and renewing the skin's surface while helping to smooth fine lines . This revitalising serum is ideal for mature and aging skin, helping to restore a smoother, more radiant complexion . Suitable for daily use as part of a regular skincare routine .\n\nSize: 30ml / 1.01 fl. oz.\n\n",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/d833bf34-f553-4740-9123-f709dd251a7b-original.webp",
+          "altText": " Face Facts Firm + Revitalise Collagen Serum",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/55dcc89f-68a3-4162-9959-10af67130d05-original.webp",
+          "altText": " Face Facts Firm + Revitalise Collagen Serum",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+        "name": "💧 Serum",
+        "slug": "serum"
+      }
+    },
+    {
+      "id": "cb49dfad-4af0-43a5-94a7-f182017bf8a8",
+      "name": " Dr. Althea 345 Relief Cream",
+      "slug": "dr-althea-345-relief-cream",
+      "description": "A soothing, lightweight moisturizer designed to calm blemishes and restore skin health. \n\nThis vegan, fragrance-free cream is formulated with Niacinamide (10,000ppm), Panthenol (10,000ppm), and Opuntia Ficus-Indica (Prickly Pear) Stem Extract. It provides deep hydration, helps fade dark spots, and calms redness. Its multi-layered gel-cream texture absorbs instantly for a non-greasy finish, making it ideal for all skin types, especially blemish-prone and sensitive skin .\n\nSize: 50ml (1.7 fl oz)",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "30626755-2744-4244-989a-3b545eea922b",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/ec0d1562-d1f9-47fd-8adb-c6a1d81c4208-original.webp",
+          "altText": " Dr. Althea 345 Relief Cream",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/1be4cd1a-067e-418e-aceb-b1894303f4a8-original.webp",
+          "altText": " Dr. Althea 345 Relief Cream",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "30626755-2744-4244-989a-3b545eea922b",
+        "name": "🧴 Moisturizer / Cream",
+        "slug": "moisturizer-cream"
+      }
+    },
+    {
+      "id": "cee016a1-b979-4823-9d32-8a22e750cd58",
+      "name": "Juli Gold Halfcaste Oil",
+      "slug": "juli-gold-halfcaste-oil",
+      "description": "A lightweight oil for radiant, moisturized skin. This moisturizing oil gives intense lightening moisture to your skin without feeling heavy. Apply directly to the skin at night for faster, visible results. Leaves your skin feeling soft, smooth, and luminous.\n",
+      "basePrice": "225",
+      "comparePrice": "250",
+      "sku": "",
+      "categoryId": "4e5c1f50-c6b4-4738-82f0-58b206e285d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/ad31f4c7-ade9-46f6-b96f-a15fa567c8ce-original.webp",
+          "altText": "Juli Gold Halfcaste Oil",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/6c6e5353-45d3-4df2-aed7-5ba9bcfb1e4e-original.webp",
+          "altText": "Juli Gold Halfcaste Oil",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "4e5c1f50-c6b4-4738-82f0-58b206e285d0",
+        "name": "Face and body oil",
+        "slug": "face-and-body-oil"
+      }
+    },
+    {
+      "id": "cfae249d-1720-4a4a-898a-2c1062a08fbb",
+      "name": " Face Facts Renew+ Radiance Retinol Serum",
+      "slug": "face-facts-renew-radiance-retinol-serum",
+      "description": "Renew your skin's radiance with retinol. This serum is formulated with Retinol to target fine lines, uneven skin tone, and dry, thirsty skin. It works to renew the skin's surface, promoting a smoother, more radiant complexion. Suitable for AM and PM use. Vegan. Size: 30ml / 1.01 fl.oz.\n",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/c1aa38b1-c73b-4cbd-86ac-4543218946d8-original.webp",
+          "altText": " Face Facts Renew+ Radiance Retinol Serum",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/90403a67-831b-4ca9-ae34-eef27a8d3575-original.webp",
+          "altText": " Face Facts Renew+ Radiance Retinol Serum",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+        "name": "💧 Serum",
+        "slug": "serum"
+      }
+    },
+    {
+      "id": "d5b3d538-3579-47bb-85f1-b2a407593915",
+      "name": " Olay Vitamin C 24HR Moisturizing Body Wash",
+      "slug": "olay-vitamin-c-24hr-moisturizing-body-wash",
+      "description": "Indulge in a luxurious body wash that hydrates instantly for visibly radiant skin.\n\nThis rich, fast-absorbing formula is enriched with Vitamin C and Niacinamide (Vitamin B3) to cleanse, nourish, and hydrate your skin for 24 hours. The premium formula leaves skin feeling soft, silky, and beautifully radiant with every shower. Backed by 60 years of beauty science.\n\nSize: 591ml (20 FL OZ)",
+      "basePrice": "250",
+      "comparePrice": "200",
+      "sku": "",
+      "categoryId": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/a3304624-7bac-41ee-9fd3-003b7e93920c-original.webp",
+          "altText": " Olay Vitamin C 24HR Moisturizing Body Wash",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+        "name": "Body wash",
+        "slug": "body-wash"
+      }
+    },
+    {
+      "id": "d67f8ba1-d0be-4231-86c7-dbe25e4e429b",
+      "name": " Aqua Rich Hydrating Bright Vitamin Body Lotion",
+      "slug": "aqua-rich-hydrating-bright-vitamin-body-lotion",
+      "description": "Luxury that reaches every inch of you. This hydrating and brightening body lotion is formulated with vitamins to drench your skin in lasting hydration while delivering a radiant glow. Silky, sensorial, and irresistibly nourishing—because your glow shouldn't stop at your neck.\n",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "fbe24419-da5d-4055-9574-bc4b6999a1e3",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/9ac00d85-928c-4653-89cf-eb7164a5be57-original.webp",
+          "altText": "🛁 Aqua Rich Hydrating Bright Vitamin Body Lotion",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/46766575-3f9f-4bbc-a69c-ce602d406a51-original.webp",
+          "altText": "🛁 Aqua Rich Hydrating Bright Vitamin Body Lotion",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "fbe24419-da5d-4055-9574-bc4b6999a1e3",
+        "name": "🛁 Body Lotion / Milk",
+        "slug": "body-lotion-milk"
+      }
+    },
+    {
+      "id": "d89627b2-bb5d-40dc-a9a3-11a0eba72a89",
+      "name": " Extra Cool  Smooth as Silk® Toning Soap",
+      "slug": "extra-cool-smooth-as-silkr-toning-soap",
+      "description": "A cooling toning soap for a refreshing cleanse. This exfoliating soap helps fade dark spots, stretch marks, sunburn, skin infections, and acne blemishes. Leaves your skin feeling smooth and revitalized.\n",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/8b64ce9a-3fb9-4cf1-aa02-1ff7ce34c353-original.webp",
+          "altText": " Extra Cool  Smooth as Silk® Toning Soap",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/95b33443-8e29-4ae3-9c1c-0aea9cdbae55-original.webp",
+          "altText": " Extra Cool  Smooth as Silk® Toning Soap",
+          "sortOrder": 2,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/f83d384a-4008-4495-8051-b7414f9c4e4c-original.webp",
+          "altText": " Extra Cool  Smooth as Silk® Toning Soap",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+        "name": "🧼 Skincare Soap",
+        "slug": "skincare-soap"
+      }
+    },
+    {
+      "id": "dbd35e09-d70d-4002-b4fc-7feaddc3f0d7",
+      "name": "D-Cure Stretch Marks Healing Oil",
+      "slug": "d-cure-stretch-marks-healing-oil",
+      "description": "Target and reduce the appearance of stretch marks with this healing oil.\n\nThis stretch marks eraser oil is formulated with Centella Asiatica and Aloe Vera to help reduce the appearance of stretch marks while soothing and nourishing the skin. The powerful combination of ingredients works to improve skin elasticity and promote a smoother, more even skin texture.\n\n",
+      "basePrice": "180",
+      "comparePrice": "200",
+      "sku": "",
+      "categoryId": "4e5c1f50-c6b4-4738-82f0-58b206e285d0",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/f69ccee9-7c5f-45f3-979e-5f047dce163d-original.webp",
+          "altText": "D-Cure Stretch Marks Healing Oil",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/925457c7-c9f0-4d24-8a48-d4a2bfcac015-original.webp",
+          "altText": "D-Cure Stretch Marks Healing Oil",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "4e5c1f50-c6b4-4738-82f0-58b206e285d0",
+        "name": "Face and body oil",
+        "slug": "face-and-body-oil"
+      }
+    },
+    {
+      "id": "e00420ed-a8bd-446e-8ac0-5281f55eb182",
+      "name": "Niu Skin Glowing Body Wash",
+      "slug": "niu-skin-glowing-body-wash",
+      "description": "Energize and refine your skin with every shower. This glowing body wash is formulated with Niacinamide, Vitamin C, and AHA to brighten, exfoliate, and refine your skin. Energizing and refreshing, it leaves your skin feeling clean, smooth, and radiant. Size: 800ml (27 fl oz).\n",
+      "basePrice": "200",
+      "comparePrice": "200",
+      "sku": "",
+      "categoryId": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/433d8663-33ab-49f0-a2c4-13ceb0c72078-original.webp",
+          "altText": "Niu Skin Glowing Body Wash",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/f512f82f-f7fc-40d5-9154-e11959b53fc9-original.webp",
+          "altText": "Niu Skin Glowing Body Wash",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+        "name": "Body wash",
+        "slug": "body-wash"
+      }
+    },
+    {
+      "id": "e132791a-51f3-400a-8a5b-ad267e98a3d7",
+      "name": "Face Facts Ceramide Skin Barrier Complex Blemish Gel Moisturiser",
+      "slug": "face-facts-ceramide-skin-barrier-complex-blemish-gel-moisturiser",
+      "description": "Dual-action hydration for blemish-prone skin. This gel moisturizer is formulated with 5 Ceramides, Salicylic Acid, and Niacinamide to minimize the appearance of imperfections and excess sebum. It provides a hydrated, matte finish while strengthening the skin barrier. Fragrance-free and vegan. Size: 50ml / 1.69 fl.oz.\n",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "30626755-2744-4244-989a-3b545eea922b",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/6178d22a-2515-48f9-94c7-850091e9d892-original.webp",
+          "altText": "Face Facts Ceramide Skin Barrier Complex Blemish Gel Moisturiser",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/70064a19-a4d6-4cff-9f79-e0db827aeffd-original.webp",
+          "altText": "Face Facts Ceramide Skin Barrier Complex Blemish Gel Moisturiser",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "30626755-2744-4244-989a-3b545eea922b",
+        "name": "🧴 Moisturizer / Cream",
+        "slug": "moisturizer-cream"
+      }
+    },
+    {
+      "id": "e47df837-f94e-44f4-8efd-677e10bd992a",
+      "name": " White Blinks Premium Pearl Powder Cereal (Collagen + Astaxanthin + Stem Cell)",
+      "slug": "white-blinks-premium-pearl-powder-cereal-collagen-astaxanthin-stem-cell",
+      "description": "The ultimate beauty supplement blend. This premium powder is formulated with Pearl Powder, Collagen, Astaxanthin, Stem Cell, and Bird Nest extracts. It works to support skin health, promote anti-aging, and enhance overall radiance. Gluten-free and packed with skin-loving nutrients.\n",
+      "basePrice": "300",
+      "comparePrice": "350",
+      "sku": "",
+      "categoryId": "77566a51-bcd0-4b5c-a2df-01aaaf03938c",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/934a819a-e13e-4acf-8f32-ae1a465cdee9-original.webp",
+          "altText": " White Blinks Premium Pearl Powder Cereal (Collagen + Astaxanthin + Stem Cell)",
+          "sortOrder": 1,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/fed15d5d-c0c4-422f-962b-8c02bf3f28b4-original.webp",
+          "altText": " White Blinks Premium Pearl Powder Cereal (Collagen + Astaxanthin + Stem Cell)",
+          "sortOrder": 2,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/eb733b83-b3da-44e4-bec8-15fc2a59dcbf-original.webp",
+          "altText": " White Blinks Premium Pearl Powder Cereal (Collagen + Astaxanthin + Stem Cell)",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "77566a51-bcd0-4b5c-a2df-01aaaf03938c",
+        "name": "💊 Dietary Supplement",
+        "slug": "dietary-supplement"
+      }
+    },
+    {
+      "id": "ebccfa5b-6b35-4534-af01-d7674c8d823b",
+      "name": "Mary & May Glutathione Eye Cream",
+      "slug": "mary-and-may-glutathione-eye-cream",
+      "description": "An intensive brightening eye cream to combat dark circles and dull skin around the eyes.\n\nThis functional eye cream combines 1,000ppm of Tranexamic Acid and 1,000ppm of Glutathione to effectively brighten dark circles and prevent blemishes from forming. With added Vitamin C, Niacinamide, and Panthenol, it stimulates collagen production, soothes the skin, and improves uneven skin tone . This formula is dermatologically tested and free from 16 harmful ingredients, making it a gentle yet powerful choice for the delicate eye area. It comes as a special set with a free gift of 24g .\n\n",
+      "basePrice": "50",
+      "comparePrice": "60",
+      "sku": "",
+      "categoryId": "30626755-2744-4244-989a-3b545eea922b",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/f0a89bca-5a87-4313-8ff2-aa5d25a86f50-original.webp",
+          "altText": "Mary & May Glutathione Eye Cream",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "30626755-2744-4244-989a-3b545eea922b",
+        "name": "🧴 Moisturizer / Cream",
+        "slug": "moisturizer-cream"
+      }
+    },
+    {
+      "id": "f7e4b880-19cf-4080-bfeb-4c2dcc1f47c5",
+      "name": "Blemish Care Full Moisturising White Milk Lotion",
+      "slug": "blemish-care-full-moisturising-white-milk-lotion",
+      "description": "Extra strength whitening and UV lightening formula for a radiant, even complexion.\n\nThis full moisturising white milk lotion is formulated with an extra strength whitening and UV lightening formula. It works to strengthen marks and provides a clearing specialist solution for a brighter, more even skin tone. The lightweight, fast-absorbing formula delivers deep hydration while targeting dark spots and uneven skin.\n\nSize: 350ml",
+      "basePrice": "280",
+      "comparePrice": "250",
+      "sku": "",
+      "categoryId": "fbe24419-da5d-4055-9574-bc4b6999a1e3",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/fe5eb02e-3345-4d80-b44c-71a755944458-original.webp",
+          "altText": "Blemish Care Full Moisturising White Milk Lotion",
+          "sortOrder": 0,
+          "isPrimary": true
+        }
+      ],
+      "category": {
+        "id": "fbe24419-da5d-4055-9574-bc4b6999a1e3",
+        "name": "🛁 Body Lotion / Milk",
+        "slug": "body-lotion-milk"
+      }
+    },
+    {
+      "id": "fb2e2936-11a4-4e3b-8b37-c052e24c57b7",
+      "name": " Niu Skin Amino Acid Gentle Face Wash",
+      "slug": "niu-skin-amino-acid-gentle-face-wash",
+      "description": "A gentle yet effective cleanser for all skin types. This amino acid face wash is formulated to provide a deep pore clean while mild exfoliating. It helps reduce acne and brighten the skin, leaving it feeling fresh and revitalized. Size: 100ml / 3.4 FL OZ.\n",
+      "basePrice": "250",
+      "comparePrice": "280",
+      "sku": "",
+      "categoryId": "7f925fd9-ba9b-4af6-92ac-131c928b7773",
+      "brandId": null,
+      "isFeatured": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isLimitedEdition": false,
+      "isActive": true,
+      "images": [
+        {
+          "url": "/uploads/products/565c2d5a-3046-4785-b1ec-63b6c650a8f3-original.webp",
+          "altText": " Niu Skin Amino Acid Gentle Face Wash",
+          "sortOrder": 2,
+          "isPrimary": false
+        },
+        {
+          "url": "/uploads/products/f09c74e4-d7c9-4ff1-8bee-aa24aad58f85-original.webp",
+          "altText": " Niu Skin Amino Acid Gentle Face Wash",
+          "sortOrder": 0,
+          "isPrimary": true
+        },
+        {
+          "url": "/uploads/products/bf62ed24-1b1c-4966-ad57-2589df66c024-original.webp",
+          "altText": " Niu Skin Amino Acid Gentle Face Wash",
+          "sortOrder": 1,
+          "isPrimary": false
+        }
+      ],
+      "category": {
+        "id": "7f925fd9-ba9b-4af6-92ac-131c928b7773",
+        "name": "☀️Facial Cleanser / Face Wash",
+        "slug": "facial-cleanser-face-wash"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "086f2586-4d0e-4d56-8465-da6e55a94f9c",
+      "name": "🧼 Skincare Soap",
+      "slug": "skincare-soap",
+      "description": "",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    },
+    {
+      "id": "1111137a-3f93-4d3d-ac83-bb41ec8015fb",
+      "name": "Body wash",
+      "slug": "body-wash",
+      "description": "",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    },
+    {
+      "id": "22ea5e3f-8b49-404c-a87f-8f4ecf7275db",
+      "name": "🌿 Toner",
+      "slug": "toner",
+      "description": "A gentle, refreshing embrace for your skin after every cleanse. Our toners do more than just remove residue  they restore your skin's natural pH balance, prep your complexion for better absorption, and deliver a surge of hydration. Whether soothing with Centella, exfoliating with AHA/BHA, or brightening with Rice, each toner is a revitalizing ritual that awakens your skin's natural glow.",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    },
+    {
+      "id": "2db14e74-1537-46f7-9ce0-9ef941cb23d0",
+      "name": "💧 Serum",
+      "slug": "serum",
+      "description": "Consider this your skin's most powerful ally. Our serums are lightweight elixirs packed with high performance active ingredients that dive deep into your skin's layers to address your most pressing concerns from dullness and hyperpigmentation to fine lines and dehydration. A few drops of pure potency, designed to transform your complexion with every application. Your skin will thank you.",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    },
+    {
+      "id": "30626755-2744-4244-989a-3b545eea922b",
+      "name": "🧴 Moisturizer / Cream",
+      "slug": "moisturizer-cream",
+      "description": "Seal in all the goodness with our moisturizers rich, velvety creams and lightweight lotions that lock in hydration while nourishing your skin barrier. Formulated with skin loving ingredients like Snail Mucin, Ceramides, and Hyaluronic Acid, these decadent creams leave your skin feeling supple, smooth, and visibly rejuvenated. The crowning step of your skincare symphony.",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    },
+    {
+      "id": "4e5c1f50-c6b4-4738-82f0-58b206e285d0",
+      "name": "Face and body oil",
+      "slug": "face-and-body-oil",
+      "description": "",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    },
+    {
+      "id": "6772f431-077b-43a8-b102-e67d6dc589c2",
+      "name": "✦ Ampoule",
+      "slug": "ampoule",
+      "description": "When your skin needs that extra boost, turn to our ampoules the ultimate concentrated treatments in the Ese Luxury Cosmetics. Formulated with potent, high dose active ingredients, these powerful drops target specific skin concerns with surgical precision. Think of them as a skincare fast track: a quick, intensive remedy that delivers visible results when you need them most.",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    },
+    {
+      "id": "77566a51-bcd0-4b5c-a2df-01aaaf03938c",
+      "name": "💊 Dietary Supplement",
+      "slug": "dietary-supplement",
+      "description": "A fusion of nature and science, our dietary supplements are crafted to support your wellness journey from the inside out. Infused with potent botanicals, essential vitamins, and targeted nutrients, these delicious gummies and capsules work harmoniously with your body to boost immunity, enhance energy, and promote radiant skin. Because true beauty is more than skin deep it's a feeling, a glow, a lifestyle.",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    },
+    {
+      "id": "7f925fd9-ba9b-4af6-92ac-131c928b7773",
+      "name": "☀️Facial Cleanser / Face Wash",
+      "slug": "facial-cleanser-face-wash",
+      "description": "",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    },
+    {
+      "id": "98836f15-1be2-43f5-a63a-021bb5970b38",
+      "name": "🌟Beauty and health",
+      "slug": "beauty-and-health",
+      "description": "Our Beauty & Health collection brings together the best of internal wellness and external care, so you can feel as good as you look. From digestion supporting supplements and daily vitamins to nourishing skincare and clean beauty essentials, every product is curated to help you build a balanced, sustainable self care routine. ",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    },
+    {
+      "id": "af971518-6c23-410b-a881-7cbe5d02daef",
+      "name": "🧴 Sunscreen",
+      "slug": "sunscreen",
+      "description": "",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    },
+    {
+      "id": "b2180067-ab17-4ed0-a2b1-e59a8383c466",
+      "name": "Facial Gel",
+      "slug": "facial-gel",
+      "description": "",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    },
+    {
+      "id": "bc983437-4e46-4718-ab40-30bc67c218dd",
+      "name": "🌸 Essence",
+      "slug": "essence",
+      "description": "A luxurious step that bridges hydration and transformation. Our essences are lightweight, nutrient-rich potions that soften, condition, and deeply hydrate your skin while enhancing the effectiveness of every product that follows. Infused with fermented extracts and botanical actives, this ritual is the secret to that coveted glass skin glow dewy, plump, and impossibly radiant.\n\n",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    },
+    {
+      "id": "fbe24419-da5d-4055-9574-bc4b6999a1e3",
+      "name": "🛁 Body Lotion / Milk",
+      "slug": "body-lotion-milk",
+      "description": "Your skin deserves the same care from head to toe. Our body lotions and milks are sumptuous, fast-absorbing emulsions that drench your skin in lasting hydration while delivering targeted benefits like brightening, firming, and softening. Silky, sensorial, and irresistibly nourishing because your glow shouldn't stop at your neck",
+      "parentId": null,
+      "sortOrder": 0,
+      "isActive": true
+    }
+  ],
+  "brands": [
+    {
+      "id": "1d5076cc-f2ef-490c-94ae-b7b6421a78b0",
+      "name": "Ese Luxury",
+      "slug": "ese-luxury",
+      "description": "Premium luxury cosmetics brand",
+      "logo": null,
+      "isActive": true
+    }
+  ]
+}

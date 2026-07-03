@@ -1,10 +1,13 @@
 // src/components/home/CategoryBar.jsx
 import { Link } from 'react-router-dom';
 
-const FALLBACK_CATS = [
+const SPECIAL_CATS = [
   { slug: 'skin-care', name: 'Skin Care', image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=80&h=80&fit=crop' },
   { slug: 'makeup', name: 'Makeup', image: 'https://images.unsplash.com/photo-1586495777744-4e6232bf5f3d?w=80&h=80&fit=crop' },
   { slug: 'hair-care', name: 'Hair Care', image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=80&h=80&fit=crop' },
+];
+
+const FALLBACK_CATS = [
   { slug: 'fragrances', name: 'Fragrances', image: 'https://images.unsplash.com/photo-1541643600914-78b084683702?w=80&h=80&fit=crop' },
   { slug: 'body-care', name: 'Body Care', image: 'https://images.unsplash.com/photo-1570194065650-d99fb4d73540?w=80&h=80&fit=crop' },
   { slug: 'nail-care', name: 'Nail Care', image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=80&h=80&fit=crop' },
@@ -13,7 +16,9 @@ const FALLBACK_CATS = [
 ];
 
 export default function CategoryBar({ categories }) {
-  const cats = (categories?.length ? categories : FALLBACK_CATS).slice(0, 8);
+  // Always include special categories at the start, then add database categories (excluding special ones)
+  const dbCats = categories?.filter(cat => !['skin-care', 'makeup', 'hair-care'].includes(cat.slug)) || [];
+  const cats = [...SPECIAL_CATS, ...dbCats, ...FALLBACK_CATS].slice(0, 8);
   return (
     <section className="category-bar">
       <div className="container">

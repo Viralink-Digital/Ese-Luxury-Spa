@@ -25,12 +25,36 @@ router.post('/add', asyncHandler(async (req, res) => {
   const product = await prisma.product.findUnique({ where: { id: productId } });
   if (!product?.isActive) throw new AppError('Product not available.', 400);
 
-  const item = await prisma.cartItem.upsert({
-    where: { userId_productId_variantId: { userId: req.user.userId, productId, variantId: variantId || null } },
-    update: { quantity: { increment: quantity } },
-    create: { userId: req.user.userId, productId, variantId: variantId || null, quantity },
-    include: { product: { include: { images: { where: { isPrimary: true }, take: 1 } } }, variant: true },
+  // Try to find existing cart item
+  const existingItem = await prisma.cartItem.findFirst({
+    where: { 
+      userId: req.user.userId, 
+      productId, 
+      variantId: variantId || null 
+    },
   });
+
+  let item;
+  if (existingItem) {
+    // Update existing item
+    item = await prisma.cartItem.update({
+      where: { id: existingItem.id },
+      data: { quantity: existingItem.quantity + quantity },
+      include: { product: { include: { images: { where: { isPrimary: true }, take: 1 } } }, variant: true },
+    });
+  } else {
+    // Create new item
+    item = await prisma.cartItem.create({
+      data: { 
+        userId: req.user.userId, 
+        productId, 
+        variantId: variantId || null, 
+        quantity 
+      },
+      include: { product: { include: { images: { where: { isPrimary: true }, take: 1 } } }, variant: true },
+    });
+  }
+
   res.json({ success: true, message: 'Item added to cart.', data: { item } });
 }));
 

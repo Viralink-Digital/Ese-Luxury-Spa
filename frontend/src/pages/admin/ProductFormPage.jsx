@@ -1,14 +1,15 @@
 // src/pages/admin/ProductFormPage.jsx
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useQuery, useMutation } from '@tanstack/react-query';
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Upload, X, Plus, Loader2, Save, ArrowLeft } from 'lucide-react';
-import { productApi, categoryApi, brandApi, uploadApi } from '@/lib/api';
+import { productApi, categoryApi, brandApi, uploadApi, refreshAccessToken } from '@/lib/api';
 import toast from 'react-hot-toast';
 
 export default function AdminProductFormPage() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
   const isEdit = !!id;
 
   const [form, setForm] = useState({
@@ -22,26 +23,41 @@ export default function AdminProductFormPage() {
   const [tagInput, setTagInput] = useState('');
   const [uploading, setUploading] = useState(false);
   const [activeTab, setActiveTab] = useState('basic');
+  const [imagesModified, setImagesModified] = useState(false);
+  const [variantsModified, setVariantsModified] = useState(false);
+  const [tagsModified, setTagsModified] = useState(false);
 
-  const { data: product } = useQuery({
+  const { data: product, isLoading: productLoading, error: productError } = useQuery({
     queryKey: ['product-edit', id],
     queryFn: () => productApi.get(id),
     enabled: isEdit,
     select: (r) => r.data.data.product,
-    onSuccess: (p) => setForm({
-      name: p.name || '', description: p.description || '',
-      ingredients: p.ingredients || '', benefits: p.benefits || '',
-      usageInstructions: p.usageInstructions || '',
-      basePrice: p.basePrice || '', comparePrice: p.comparePrice || '',
-      sku: p.sku || '', barcode: p.barcode || '', weight: p.weight || '',
-      categoryId: p.categoryId || '', brandId: p.brandId || '',
-      isFeatured: p.isFeatured, isBestSeller: p.isBestSeller,
-      isNewArrival: p.isNewArrival, isLimitedEdition: p.isLimitedEdition,
-      metaTitle: p.metaTitle || '', metaDesc: p.metaDesc || '', metaKeywords: p.metaKeywords || '',
-      images: p.images?.map((img) => ({ url: img.url, altText: img.altText })) || [],
-      variants: p.variants || [], tags: p.tags?.map((t) => t.tag) || [],
-    }),
   });
+
+  // Update form when product data is loaded
+  useEffect(() => {
+    if (product && isEdit) {
+      setForm({
+        name: product.name || '', description: product.description || '',
+        ingredients: product.ingredients || '', benefits: product.benefits || '',
+        usageInstructions: product.usageInstructions || '',
+        basePrice: product.basePrice !== undefined ? product.basePrice : '', 
+        comparePrice: product.comparePrice !== undefined ? product.comparePrice : '',
+        sku: product.sku || '', barcode: product.barcode || '', 
+        weight: product.weight !== undefined ? product.weight : '',
+        categoryId: product.categoryId || '', brandId: product.brandId || '',
+        isFeatured: product.isFeatured, isBestSeller: product.isBestSeller,
+        isNewArrival: product.isNewArrival, isLimitedEdition: product.isLimitedEdition,
+        metaTitle: product.metaTitle || '', metaDesc: product.metaDesc || '', 
+        metaKeywords: product.metaKeywords || '',
+        images: product.images?.map((img) => ({ url: img.url, altText: img.altText })) || [],
+        variants: product.variants || [], tags: product.tags?.map((t) => t.tag) || [],
+      });
+      setImagesModified(false); // Reset images modified flag when loading product
+      setVariantsModified(false); // Reset variants modified flag when loading product
+      setTagsModified(false); // Reset tags modified flag when loading product
+    }
+  }, [product, isEdit]);
 
   const { data: categories } = useQuery({
     queryKey: ['categories'],
@@ -56,9 +72,25 @@ export default function AdminProductFormPage() {
   });
 
   const saveMutation = useMutation({
-    mutationFn: (data) => isEdit ? productApi.update(id, data) : productApi.create(data),
+    mutationFn: (data) => {
+      // When editing, only send arrays if they were modified
+      const submissionData = isEdit 
+        ? {
+            ...data,
+            images: imagesModified ? data.images : undefined,
+            variants: variantsModified ? data.variants : undefined,
+            tags: tagsModified ? data.tags : undefined,
+          }
+        : data;
+      return isEdit ? productApi.update(id, submissionData) : productApi.create(submissionData);
+    },
     onSuccess: () => {
       toast.success(`Product ${isEdit ? 'updated' : 'created'} successfully!`);
+      // Invalidate all product-related queries to refresh data
+      queryClient.invalidateQueries({ queryKey: ['products'] });
+      queryClient.invalidateQueries({ queryKey: ['product-edit', id] });
+      queryClient.invalidateQueries({ queryKey: ['admin', 'dashboard'] });
+      queryClient.invalidateQueries({ queryKey: ['admin', 'inventory'] });
       navigate('/admin/products');
     },
     onError: (err) => toast.error(err.response?.data?.message || 'Failed to save product'),
@@ -72,28 +104,50 @@ export default function AdminProductFormPage() {
   const handleImageUpload = async (e) => {
     const files = Array.from(e.target.files);
     if (!files.length) return;
+
+    const formData = new FormData();
+    files.forEach((f) => formData.append('images', f));
+
     setUploading(true);
     try {
-      const formData = new FormData();
-      files.forEach((f) => formData.append('images', f));
       const res = await uploadApi.products(formData);
       const newImages = res.data.data.images;
       setForm((f) => ({ ...f, images: [...f.images, ...newImages] }));
+      setImagesModified(true);
       toast.success(`${newImages.length} image(s) uploaded`);
-    } catch {
-      toast.error('Image upload failed');
+    } catch (err) {
+      if (err?.response?.status === 401) {
+        try {
+          await refreshAccessToken();
+          const res = await uploadApi.products(formData);
+          const newImages = res.data.data.images;
+          setForm((f) => ({ ...f, images: [...f.images, ...newImages] }));
+          setImagesModified(true);
+          toast.success(`${newImages.length} image(s) uploaded`);
+        } catch (retryErr) {
+          toast.error(retryErr.response?.data?.message || 'Image upload failed');
+        }
+      } else {
+        toast.error(err.response?.data?.message || 'Image upload failed');
+      }
     } finally {
       setUploading(false);
     }
   };
 
-  const removeImage = (i) => setForm((f) => ({ ...f, images: f.images.filter((_, idx) => idx !== i) }));
+  const removeImage = (i) => {
+    setForm((f) => ({ ...f, images: f.images.filter((_, idx) => idx !== i) }));
+    setImagesModified(true);
+  };
 
   const addTag = (e) => {
     if ((e.key === 'Enter' || e.key === ',') && tagInput.trim()) {
       e.preventDefault();
       const tag = tagInput.trim().toLowerCase();
-      if (!form.tags.includes(tag)) setForm((f) => ({ ...f, tags: [...f.tags, tag] }));
+      if (!form.tags.includes(tag)) {
+        setForm((f) => ({ ...f, tags: [...f.tags, tag] }));
+        setTagsModified(true);
+      }
       setTagInput('');
     }
   };
@@ -103,6 +157,7 @@ export default function AdminProductFormPage() {
       ...f,
       variants: [...f.variants, { name: 'Shade', value: '', type: 'shade', price: '', stockQty: 0 }],
     }));
+    setVariantsModified(true);
   };
 
   const updateVariant = (i, field, val) => {
@@ -110,9 +165,31 @@ export default function AdminProductFormPage() {
       ...f,
       variants: f.variants.map((v, idx) => idx === i ? { ...v, [field]: val } : v),
     }));
+    setVariantsModified(true);
   };
 
   const TABS = ['basic', 'details', 'variants', 'images', 'seo'];
+
+  // Show loading state while fetching product data
+  if (isEdit && productLoading) {
+    return (
+      <div className="admin-page" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '400px' }}>
+        <Loader2 size={32} className="spin" />
+      </div>
+    );
+  }
+
+  // Show error state if product fetch fails
+  if (isEdit && productError) {
+    return (
+      <div className="admin-page" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '400px' }}>
+        <div style={{ textAlign: 'center' }}>
+          <p style={{ color: 'red', marginBottom: '16px' }}>Failed to load product data</p>
+          <button className="btn btn--primary" onClick={() => navigate('/admin/products')}>Back to Products</button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="admin-page">
@@ -129,7 +206,7 @@ export default function AdminProductFormPage() {
         <button
           className="btn btn--primary"
           onClick={() => saveMutation.mutate(form)}
-          disabled={saveMutation.isPending || !form.name || !form.basePrice || !form.categoryId}
+          disabled={saveMutation.isPending || !form.name || form.basePrice === '' || !form.categoryId}
         >
           {saveMutation.isPending ? <Loader2 size={16} className="spin" /> : <Save size={16} />}
           {isEdit ? 'Save Changes' : 'Create Product'}
@@ -173,11 +250,11 @@ export default function AdminProductFormPage() {
               </div>
               <div className="form-row">
                 <div className="form-group">
-                  <label className="form-label">Base Price (GH₵) <span className="form-required">*</span></label>
+                  <label className="form-label">Base Price (₦) <span className="form-required">*</span></label>
                   <input type="number" className="form-input" placeholder="0.00" value={form.basePrice} onChange={set('basePrice')} />
                 </div>
                 <div className="form-group">
-                  <label className="form-label">Compare Price (GH₵)</label>
+                  <label className="form-label">Compare Price (₦)</label>
                   <input type="number" className="form-input" placeholder="Original price" value={form.comparePrice} onChange={set('comparePrice')} />
                 </div>
               </div>
@@ -219,7 +296,10 @@ export default function AdminProductFormPage() {
                   {form.tags.map((tag) => (
                     <span key={tag} className="form-tag">
                       {tag}
-                      <button onClick={() => setForm((f) => ({ ...f, tags: f.tags.filter((t) => t !== tag) }))}><X size={10} /></button>
+                      <button onClick={() => {
+                        setForm((f) => ({ ...f, tags: f.tags.filter((t) => t !== tag) }));
+                        setTagsModified(true);
+                      }}><X size={10} /></button>
                     </span>
                   ))}
                   <input
@@ -269,9 +349,12 @@ export default function AdminProductFormPage() {
                         {['shade', 'color', 'size', 'volume', 'scent'].map((t) => <option key={t}>{t}</option>)}
                       </select>
                       <input type="text" className="form-input form-input--sm" placeholder="Value" value={v.value} onChange={(e) => updateVariant(i, 'value', e.target.value)} />
-                      <input type="number" className="form-input form-input--sm" placeholder="Price (GH₵)" value={v.price} onChange={(e) => updateVariant(i, 'price', e.target.value)} />
+                      <input type="number" className="form-input form-input--sm" placeholder="Price (₦)" value={v.price} onChange={(e) => updateVariant(i, 'price', e.target.value)} />
                       <input type="number" className="form-input form-input--sm" placeholder="Stock" value={v.stockQty} onChange={(e) => updateVariant(i, 'stockQty', e.target.value)} />
-                      <button className="admin-action-btn admin-action-btn--delete" onClick={() => setForm((f) => ({ ...f, variants: f.variants.filter((_, idx) => idx !== i) }))}>
+                      <button className="admin-action-btn admin-action-btn--delete" onClick={() => {
+                        setForm((f) => ({ ...f, variants: f.variants.filter((_, idx) => idx !== i) }));
+                        setVariantsModified(true);
+                      }}>
                         <X size={14} />
                       </button>
                     </div>
@@ -290,7 +373,7 @@ export default function AdminProductFormPage() {
                 {uploading ? (
                   <><Loader2 size={32} className="spin" /><p>Uploading...</p></>
                 ) : (
-                  <><Upload size={32} /><p>Click to upload or drag & drop</p><p className="image-upload-zone__sub">PNG, JPG, WebP up to 5MB each</p></>
+                  <><Upload size={32} /><p>Click to upload or drag & drop</p><p className="image-upload-zone__sub">PNG, JPG, WebP up to 10MB each</p></>
                 )}
               </label>
               {form.images.length > 0 && (

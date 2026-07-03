@@ -17,7 +17,12 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 export async function connectDB() {
-  await prisma.$connect();
+  try {
+    await prisma.$connect();
+  } catch (error) {
+    logger.error('Database connection failed:', error.message);
+    throw error;
+  }
 }
 
 export default prisma;

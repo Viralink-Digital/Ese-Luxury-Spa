@@ -1,5 +1,6 @@
 // src/pages/HomePage.jsx
-import { useQuery } from '@tanstack/react-query';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronRight, Star, Truck, Shield, RotateCcw, Headphones } from 'lucide-react';
 import { productApi, categoryApi, cmsApi } from '@/lib/api';
@@ -16,7 +17,7 @@ import ecoFriendlyImage from '@/styles/eco-friendly.jpg';
 import pinkStampImage from '@/styles/pink-stamp.jpg';
 
 const TRUST_BADGES = [
-  { Icon: Truck, title: 'Free Delivery', sub: 'Orders over GH₵15,000' },
+  { Icon: Truck, title: 'Free Delivery', sub: 'Orders over ₦15,000' },
   { Icon: Shield, title: '100% Authentic', sub: 'Certified products only' },
   { Icon: RotateCcw, title: 'Easy Returns', sub: '14-day return policy' },
   { Icon: Headphones, title: '24/7 Support', sub: 'Always here for you' },
@@ -29,6 +30,17 @@ const HIGHLIGHT_CARDS = [
 ];
 
 export default function HomePage() {
+  const queryClient = useQueryClient();
+
+  // Auto-refresh product data when page gets focus (user returns from editing a product)
+  useEffect(() => {
+    const handleFocus = () => {
+      queryClient.invalidateQueries({ queryKey: ['products'] });
+    };
+    window.addEventListener('focus', handleFocus);
+    return () => window.removeEventListener('focus', handleFocus);
+  }, [queryClient]);
+
   const { data: bestSellers, isLoading: bsLoading } = useQuery({
     queryKey: ['products', 'best-sellers'],
     queryFn: () => productApi.list({ bestSeller: true, limit: 4 }),

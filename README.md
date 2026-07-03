@@ -124,7 +124,160 @@ npm install
 npm run dev
 ```
 
+### 🎯 Quick Start with Scripts
+
+The project includes automated startup scripts for Windows:
+
+```bash
+# Start all servers (backend + frontend)
+.\start-dev.bat
+
+# Stop all servers
+.\stop-dev.bat
+
+# Restart all servers
+.\restart-dev.bat
+
+# Or use PowerShell scripts
+powershell -ExecutionPolicy Bypass -File .\start.ps1
+powershell -ExecutionPolicy Bypass -File .\stop.ps1
+```
+
+**Manual start if scripts fail:**
+```bash
+# Terminal 1: Backend
+cd backend
+npm run dev
+
+# Terminal 2: Frontend
+cd frontend
+npm run dev
+```
+
+**Access points:**
+- Frontend: http://localhost:5173
+- Backend: http://localhost:5000
+- Admin Panel: http://localhost:5173/admin
+
 The admin dashboard is available under `/admin` once an admin user is authenticated.
+
+---
+
+## 🚀 GitHub Deployment Setup
+
+### ⚠️ Important Notes for GitHub Deployment
+
+**This project is ready for GitHub with the following considerations:**
+
+1. **✅ Images Included:** Product images in `backend/uploads/` are included in the repository
+2. **✅ Source Code:** All code is production-ready
+3. **⚠️ Database Data:** Needs to be seeded from exported data
+4. **⚠️ Environment Variables:** Copy `.env.example` to `.env`
+
+### 📋 GitHub Setup Instructions
+
+#### **Step 1: Clone the Repository**
+```bash
+git clone <your-repo-url>
+cd Ese-Luxury-Spa
+```
+
+#### **Step 2: Install Dependencies**
+```bash
+# Backend
+cd backend
+npm install
+
+# Frontend
+cd ../frontend
+npm install
+```
+
+#### **Step 3: Setup Environment Variables**
+```bash
+# Backend
+cd backend
+cp .env.example .env
+# Edit .env with your database credentials
+```
+
+#### **Step 4: Start MySQL Database**
+```bash
+# Start MySQL with Docker
+docker-compose up -d mysql
+```
+
+#### **Step 5: Run Database Migrations**
+```bash
+cd backend
+npx prisma migrate dev --name init
+npx prisma generate
+```
+
+#### **Step 6: Seed Database with Sample Data**
+```bash
+# If you have exported data from another installation
+.\seed-data.bat
+
+# Or create the default admin account
+npm run seed
+```
+
+#### **Step 7: Start the Application**
+```bash
+# Use the startup scripts
+.\start-dev.bat
+
+# Or start manually
+# Terminal 1: Backend
+cd backend && npm run dev
+
+# Terminal 2: Frontend  
+cd frontend && npm run dev
+```
+
+### 🎯 Data Export/Import Scripts
+
+**If you want to move data between installations:**
+
+```bash
+# Export data from current installation
+.\export-data.bat
+
+# Import data to new installation
+.\seed-data.bat
+```
+
+### 📦 What's Included in GitHub
+
+**✅ Included:**
+- All source code
+- Product images in `backend/uploads/`
+- Database schema (Prisma schema)
+- Startup scripts
+- Documentation
+
+**❌ Not Included (Security):**
+- `.env` files (use `.env.example`)
+- `node_modules/` (install with npm)
+- Live database data (use seed scripts)
+
+### 🔧 Customization for Your Environment
+
+1. **Update Database URL** in `backend/.env`
+2. **Update Frontend URL** in `backend/.env` if needed
+3. **Configure API Keys** for TextBee SMS and Korapay payments
+4. **Update JWT secrets** for production security
+
+### 🌐 Production Deployment
+
+For production deployment, consider:
+
+1. **Cloud Storage:** Move images to AWS S3, Cloudinary, or similar
+2. **Database:** Use managed MySQL service (AWS RDS, DigitalOcean, etc.)
+3. **Environment Variables:** Use secure environment variable management
+4. **SSL/HTTPS:** Enable SSL for secure connections
+5. **Process Management:** Use PM2 or similar for production process management
 
 ---
 

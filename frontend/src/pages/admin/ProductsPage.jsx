@@ -1,5 +1,5 @@
 // src/pages/admin/ProductsPage.jsx
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Plus, Search, Edit, Trash2, Eye, Star, Package, Loader2 } from 'lucide-react';
@@ -12,19 +12,43 @@ export default function AdminProductsPage() {
   const [deleting, setDeleting] = useState(null);
   const queryClient = useQueryClient();
 
-  const { data, isLoading } = useQuery({
+  // Debounced search handler
+  const handleSearchChange = useCallback((e) => {
+    const value = e.target.value;
+    setSearch(value);
+    setPage(1); // Reset to first page on search
+  }, []);
+
+  const { data, isLoading, error } = useQuery({
     queryKey: ['admin-products', page, search],
     queryFn: () => productApi.list({ page, limit: 20, search: search || undefined }),
-    select: (r) => r.data.data,
+    select: (r) => r.data.data, // Axios gives r.data, which contains { success: true, data: { products, pagination } }
     keepPreviousData: true,
+    staleTime: 0, // Disable caching to ensure fresh search results
   });
+
+  // Debug logging
+  if (error) {
+    console.error('Search error:', error);
+    toast.error('Failed to load products');
+  }
+
+  // Log search results for debugging
+  if (data) {
+    console.log('API Response structure:', { keys: Object.keys(data), productsCount: data.products?.length });
+    console.log(`Products loaded: ${data.products?.length || 0} products (search: "${search || 'none'}")`);
+  }
 
   const deleteMutation = useMutation({
     mutationFn: (id) => productApi.delete(id),
     onSuccess: () => {
       toast.success('Product deleted');
       setDeleting(null);
-      queryClient.invalidateQueries(['admin-products']);
+      // Invalidate all product-related queries to refresh data
+      queryClient.invalidateQueries({ queryKey: ['admin-products'] });
+      queryClient.invalidateQueries({ queryKey: ['products'] });
+      queryClient.invalidateQueries({ queryKey: ['admin', 'dashboard'] });
+      queryClient.invalidateQueries({ queryKey: ['admin', 'inventory'] });
     },
     onError: () => toast.error('Failed to delete product'),
   });
@@ -50,7 +74,7 @@ export default function AdminProductsPage() {
             placeholder="Search products..."
             className="admin-search__input"
             value={search}
-            onChange={(e) => { setSearch(e.target.value); setPage(1); }}
+            onChange={handleSearchChange}
           />
         </div>
       </div>
@@ -101,9 +125,9 @@ export default function AdminProductsPage() {
                     <td>{p.category?.name || '—'}</td>
                     <td>
                       <div>
-                        <span className="admin-price">GH₵{parseFloat(p.basePrice).toLocaleString()}</span>
+                        <span className="admin-price">₦{parseFloat(p.basePrice).toLocaleString()}</span>
                         {p.comparePrice && (
-                          <span className="admin-price--compare">GH₵{parseFloat(p.comparePrice).toLocaleString()}</span>
+                          <span className="admin-price--compare">₦{parseFloat(p.comparePrice).toLocaleString()}</span>
                         )}
                       </div>
                     </td>

@@ -203,10 +203,16 @@ export const createProduct = asyncHandler(async (req, res) => {
     images, variants, tags,
   } = req.body;
 
-  const slug = slugify(name, { lower: true, strict: true });
+  let slug = slugify(name, { lower: true, strict: true });
 
   const existing = await prisma.product.findUnique({ where: { slug } });
-  if (existing) throw new AppError('Product with this name already exists.', 400);
+  if (existing) {
+    const suffix = Math.random().toString(36).slice(2, 8);
+    slug = `${slug}-${suffix}`;
+  }
+
+  // Handle empty brandId
+  const productBrandId = brandId === '' ? null : brandId;
 
   const product = await prisma.product.create({
     data: {
@@ -216,13 +222,13 @@ export const createProduct = asyncHandler(async (req, res) => {
       ingredients,
       benefits,
       usageInstructions,
-      basePrice: parseFloat(basePrice),
-      comparePrice: comparePrice ? parseFloat(comparePrice) : null,
+      basePrice: basePrice !== undefined ? parseFloat(basePrice) : 0,
+      comparePrice: comparePrice !== undefined ? parseFloat(comparePrice) : null,
       sku,
       barcode,
       weight: weight ? parseFloat(weight) : null,
       categoryId,
-      brandId,
+      brandId: productBrandId,
       isFeatured: isFeatured || false,
       isBestSeller: isBestSeller || false,
       isNewArrival: isNewArrival !== false,
@@ -244,7 +250,7 @@ export const createProduct = asyncHandler(async (req, res) => {
           name: v.name,
           value: v.value,
           type: v.type,
-          price: v.price ? parseFloat(v.price) : null,
+          price: v.price !== undefined ? parseFloat(v.price) : null,
           stockQty: parseInt(v.stockQty) || 0,
           sku: v.sku,
           image: v.image,
@@ -278,16 +284,84 @@ export const updateProduct = asyncHandler(async (req, res) => {
   const existing = await prisma.product.findUnique({ where: { id } });
   if (!existing) throw new AppError('Product not found.', 404);
 
-  const updateData = { ...req.body };
-  if (updateData.basePrice) updateData.basePrice = parseFloat(updateData.basePrice);
-  if (updateData.comparePrice) updateData.comparePrice = parseFloat(updateData.comparePrice);
+  const { images, variants, tags, ...updateData } = req.body;
+  if (updateData.basePrice !== undefined) updateData.basePrice = parseFloat(updateData.basePrice);
+  if (updateData.comparePrice !== undefined) updateData.comparePrice = parseFloat(updateData.comparePrice);
+  if (updateData.weight !== undefined) {
+    updateData.weight = updateData.weight === '' ? null : parseFloat(updateData.weight);
+  }
+  if (updateData.brandId === '') {
+    updateData.brandId = null;
+  }
   if (updateData.name && updateData.name !== existing.name) {
     updateData.slug = slugify(updateData.name, { lower: true, strict: true });
   }
 
+  const nestedData = {};
+  // Only update images if they are explicitly provided (not undefined)
+  // If images is undefined, we keep the existing images
+  if (images !== undefined && images !== null) {
+    // If images array is provided, replace all images
+    if (images.length > 0) {
+      nestedData.images = {
+        deleteMany: {},
+        create: images.map((img, i) => ({
+          url: img.url,
+          altText: img.altText || updateData.name || existing.name,
+          sortOrder: i,
+          isPrimary: i === 0,
+        })),
+      };
+    } else {
+      // If empty array is provided, delete all images
+      nestedData.images = {
+        deleteMany: {},
+      };
+    }
+  }
+
+  // Only update variants if they are explicitly provided (not undefined)
+  if (variants !== undefined && variants !== null) {
+    if (variants.length > 0) {
+      nestedData.variants = {
+        deleteMany: {},
+        create: variants.map((v, i) => ({
+          name: v.name,
+          value: v.value,
+          type: v.type,
+          price: v.price !== undefined ? parseFloat(v.price) : null,
+          stockQty: parseInt(v.stockQty, 10) || 0,
+          sku: v.sku,
+          image: v.image,
+          sortOrder: i,
+        })),
+      };
+    } else {
+      // If empty array is provided, delete all variants
+      nestedData.variants = {
+        deleteMany: {},
+      };
+    }
+  }
+
+  // Only update tags if they are explicitly provided (not undefined)
+  if (tags !== undefined && tags !== null) {
+    if (tags.length > 0) {
+      nestedData.tags = {
+        deleteMany: {},
+        create: tags.map((tag) => ({ tag })),
+      };
+    } else {
+      // If empty array is provided, delete all tags
+      nestedData.tags = {
+        deleteMany: {},
+      };
+    }
+  }
+
   const product = await prisma.product.update({
     where: { id },
-    data: updateData,
+    data: { ...updateData, ...nestedData },
     include: { images: true, variants: true, category: true, brand: true },
   });
 
@@ -304,8 +378,18 @@ export const deleteProduct = asyncHandler(async (req, res) => {
   const product = await prisma.product.findUnique({ where: { id } });
   if (!product) throw new AppError('Product not found.', 404);
 
-  // Soft delete
-  await prisma.product.update({ where: { id }, data: { isActive: false } });
+  // Hard delete with cascade - remove related records first
+  await prisma.cartItem.deleteMany({ where: { productId: id } });
+  await prisma.wishlistItem.deleteMany({ where: { productId: id } });
+  await prisma.recentlyViewed.deleteMany({ where: { productId: id } });
+  await prisma.review.deleteMany({ where: { productId: id } });
+  await prisma.productTag.deleteMany({ where: { productId: id } });
+  await prisma.productVariant.deleteMany({ where: { productId: id } });
+  await prisma.productImage.deleteMany({ where: { productId: id } });
+  await prisma.orderItem.deleteMany({ where: { productId: id } });
+
+  // Now delete the product
+  await prisma.product.delete({ where: { id } });
   // No cache invalidation required
 
   res.json({ success: true, message: 'Product deleted.' });

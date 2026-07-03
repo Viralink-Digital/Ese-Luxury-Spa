@@ -27,6 +27,16 @@ function onRefreshed(token) {
   refreshSubscribers = [];
 }
 
+export const refreshAccessToken = async () => {
+  const { refreshToken, setTokens, logout } = useAuthStore.getState();
+  if (!refreshToken) throw new Error('No refresh token');
+
+  const res = await axios.post(`${BASE_URL}/auth/refresh`, { refreshToken });
+  const { accessToken: newAccess, refreshToken: newRefresh } = res.data.data;
+  setTokens(newAccess, newRefresh);
+  return newAccess;
+};
+
 api.interceptors.response.use(
   (res) => res,
   async (error) => {
@@ -46,12 +56,7 @@ api.interceptors.response.use(
       isRefreshing = true;
 
       try {
-        const { refreshToken, setTokens, logout } = useAuthStore.getState();
-        if (!refreshToken) throw new Error('No refresh token');
-
-        const res = await axios.post(`${BASE_URL}/auth/refresh`, { refreshToken });
-        const { accessToken: newAccess, refreshToken: newRefresh } = res.data.data;
-        setTokens(newAccess, newRefresh);
+        const newAccess = await refreshAccessToken();
         onRefreshed(newAccess);
         original.headers.Authorization = `Bearer ${newAccess}`;
         return api(original);

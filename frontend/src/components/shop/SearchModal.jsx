@@ -112,7 +112,7 @@ export default function SearchModal() {
                     <p className="search-result__name">{p.name}</p>
                     <p className="search-result__cat">{p.category?.name}</p>
                   </div>
-                  <span className="search-result__price">GH₵{parseFloat(p.basePrice).toLocaleString()}</span>
+                  <span className="search-result__price">₦{parseFloat(p.basePrice).toLocaleString()}</span>
                   <ArrowRight size={14} className="search-result__arrow" />
                 </Link>
               ))}

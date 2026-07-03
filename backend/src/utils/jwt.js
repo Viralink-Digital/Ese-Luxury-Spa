@@ -14,9 +14,9 @@ export function generateRefreshToken(payload) {
   });
 }
 
-export function verifyAccessToken(token) {
+export function verifyAccessToken(token, options = {}) {
   try {
-    return jwt.verify(token, process.env.JWT_ACCESS_SECRET);
+    return jwt.verify(token, process.env.JWT_ACCESS_SECRET, options.allowExpired ? { ignoreExpiration: true } : undefined);
   } catch (err) {
     throw new AppError(
       err.name === 'TokenExpiredError' ? 'Token expired. Please refresh.' : 'Invalid token.',

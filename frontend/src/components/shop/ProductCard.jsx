@@ -68,8 +68,8 @@ export default function ProductCard({ product, delay = 0, listView = false }) {
             <span className="product-card__reviews">({product.reviewCount})</span>
           </div>
           <div className="product-card__price">
-            <span className="product-card__price-current">GH₵{parseFloat(product.basePrice).toLocaleString()}</span>
-            {product.comparePrice && <span className="product-card__price-original">GH₵{parseFloat(product.comparePrice).toLocaleString()}</span>}
+            <span className="product-card__price-current">₦{parseFloat(product.basePrice).toLocaleString()}</span>
+            {product.comparePrice && <span className="product-card__price-original">₦{parseFloat(product.comparePrice).toLocaleString()}</span>}
           </div>
         </div>
         <div className="product-card__actions">
@@ -147,9 +147,9 @@ export default function ProductCard({ product, delay = 0, listView = false }) {
         </div>
 
         <div className="product-card__price">
-          <span className="product-card__price-current">GH₵{parseFloat(product.basePrice).toLocaleString()}</span>
+          <span className="product-card__price-current">₦{parseFloat(product.basePrice).toLocaleString()}</span>
           {product.comparePrice && (
-            <span className="product-card__price-original">GH₵{parseFloat(product.comparePrice).toLocaleString()}</span>
+            <span className="product-card__price-original">₦{parseFloat(product.comparePrice).toLocaleString()}</span>
           )}
         </div>
       </div>

@@ -242,13 +242,13 @@ export default function ProductPage() {
                 setTimeout(() => window.location.href = '/checkout', 600);
               }}
             >
-              Buy Now — GH₵{(parseFloat(price) * qty).toLocaleString()}
+              Buy Now — ₦{(parseFloat(price) * qty).toLocaleString()}
             </button>
 
             {/* Trust Badges */}
             <div className="product-trust">
               {[
-                { Icon: Package, text: 'Free delivery over GH₵15,000' },
+                { Icon: Package, text: 'Free delivery over ₦15,000' },
                 { Icon: RotateCcw, text: '14-day easy returns' },
                 { Icon: Check, text: '100% authentic product' },
               ].map(({ Icon, text }) => (

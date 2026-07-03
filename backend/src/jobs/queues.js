@@ -73,12 +73,21 @@ async function fallbackProcessImage(data) {
 }
 
 function createBullQueue(queueName) {
-  if (!redisConnection) return null;
+  if (!redisConnection) {
+    logger.warn(`Redis not configured, queue ${queueName} will run in fallback mode`);
+    return null;
+  }
 
   try {
     const queue = new Queue(queueName, redisConnection);
     new JobScheduler(queueName, redisConnection);
-    queue.on('error', (err) => logger.error(`BullMQ queue ${queueName} error:`, err));
+    queue.on('error', (err) => {
+      if (err.code === 'ECONNREFUSED') {
+        logger.warn(`Redis connection refused for ${queueName}, using fallback mode`);
+      } else {
+        logger.error(`BullMQ queue ${queueName} error:`, err);
+      }
+    });
     return queue;
   } catch (err) {
     logger.error(`Failed to initialize BullMQ queue ${queueName}:`, err.message);

@@ -11,7 +11,8 @@ export const authenticate = asyncHandler(async (req, res, next) => {
   }
 
   const token = authHeader.split(' ')[1];
-  const payload = verifyAccessToken(token);
+  const payload = verifyAccessToken(token, { allowExpired: true });
+  req.authExpired = typeof payload.exp === 'number' && payload.exp * 1000 < Date.now();
 
   // Verify user still exists and is active
   const user = await prisma.user.findUnique({

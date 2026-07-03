@@ -59,7 +59,7 @@ export default function OrderConfirmationPage() {
               </div>
               <div className="confirmation-row">
                 <span>Total Amount</span>
-                <strong>GH₵{parseFloat(order.total).toLocaleString()}</strong>
+                <strong>₦{parseFloat(order.total).toLocaleString()}</strong>
               </div>
               <div className="confirmation-row">
                 <span>Payment Status</span>

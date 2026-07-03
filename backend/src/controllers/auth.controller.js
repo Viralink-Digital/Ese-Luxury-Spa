@@ -269,32 +269,42 @@ export const refreshToken = asyncHandler(async (req, res) => {
   if (!token) throw new AppError('Refresh token required.', 401);
 
   const payload = verifyRefreshToken(token);
-  const stored = await prisma.refreshToken.findUnique({ where: { token } });
-
-  if (!stored || stored.expiresAt < new Date()) {
-    throw new AppError('Invalid or expired refresh token.', 401);
-  }
-
   const user = await prisma.user.findUnique({ where: { id: payload.userId } });
   if (!user || !user.isActive) throw new AppError('User not found or inactive.', 401);
 
-  // Rotate refresh token
-  await prisma.refreshToken.delete({ where: { token } });
-  const newRefreshToken = generateRefreshToken({ userId: user.id });
-  await prisma.refreshToken.create({
-    data: {
-      userId: user.id,
-      token: newRefreshToken,
-      expiresAt: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
-    },
-  });
+  const stored = await prisma.refreshToken.findUnique({ where: { token } });
+
+  if (!stored) {
+    await prisma.refreshToken.create({
+      data: {
+        userId: user.id,
+        token,
+        expiresAt: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+      },
+    });
+  } else if (stored.expiresAt < new Date()) {
+    throw new AppError('Invalid or expired refresh token.', 401);
+  } else {
+    await prisma.refreshToken.update({
+      where: { id: stored.id },
+      data: { expiresAt: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) },
+    });
+  }
 
   const accessToken = generateAccessToken({ userId: user.id, role: user.role });
+  const newRefreshToken = generateRefreshToken({ userId: user.id });
 
-  res.json({
-    success: true,
-    data: { accessToken, refreshToken: newRefreshToken },
-  });
+  if (!stored) {
+    res.json({
+      success: true,
+      data: { accessToken, refreshToken: token },
+    });
+  } else {
+    res.json({
+      success: true,
+      data: { accessToken, refreshToken: newRefreshToken },
+    });
+  }
 });
 
 // ─────────────────────────────────────────

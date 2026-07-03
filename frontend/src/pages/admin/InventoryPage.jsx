@@ -19,7 +19,14 @@ export default function AdminInventoryPage() {
 
   const updateMutation = useMutation({
     mutationFn: ({ id, stockQty }) => adminApi.updateInventory(id, { stockQty }),
-    onSuccess: () => { toast.success('Stock updated'); qc.invalidateQueries(['inventory']); setEditing({}); },
+    onSuccess: () => {
+      toast.success('Stock updated');
+      // Invalidate all product-related queries to refresh data
+      qc.invalidateQueries({ queryKey: ['inventory'] });
+      qc.invalidateQueries({ queryKey: ['products'] });
+      qc.invalidateQueries({ queryKey: ['admin', 'dashboard'] });
+      setEditing({});
+    },
     onError: () => toast.error('Update failed'),
   });
 

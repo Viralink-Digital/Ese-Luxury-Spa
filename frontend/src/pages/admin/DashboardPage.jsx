@@ -87,7 +87,7 @@ export default function AdminDashboard() {
         <StatCard
           icon={TrendingUp}
           title="Revenue"
-          value={`GH₵${parseFloat(data?.stats?.totalRevenue || 0).toLocaleString()}`}
+          value={`₦${parseFloat(data?.stats?.totalRevenue || 0).toLocaleString()}`}
           sub="From paid orders"
           color="#10b981"
         />

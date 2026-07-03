@@ -26,13 +26,36 @@ router.get('/:slug', asyncHandler(async (req, res) => {
 router.post('/', authenticate, requireAdmin, asyncHandler(async (req, res) => {
   const { name, description, image, parentId, sortOrder, metaTitle, metaDesc } = req.body;
   const slug = slugify(name, { lower: true, strict: true });
-  const category = await prisma.category.create({ data: { name, slug, description, image, parentId, sortOrder: parseInt(sortOrder) || 0, metaTitle, metaDesc } });
+
+  // Check if category with this slug already exists
+  const existing = await prisma.category.findFirst({ where: { slug, isActive: true } });
+  if (existing) throw new AppError('Category with this name already exists.', 400);
+
+  // Handle empty parentId
+  const categoryParentId = parentId === '' ? null : parentId;
+
+  const category = await prisma.category.create({
+    data: {
+      name,
+      slug,
+      description,
+      image,
+      parentId: categoryParentId,
+      sortOrder: parseInt(sortOrder) || 0,
+      metaTitle,
+      metaDesc
+    }
+  });
   res.status(201).json({ success: true, data: { category } });
 }));
 
 router.put('/:id', authenticate, requireAdmin, asyncHandler(async (req, res) => {
   const data = { ...req.body };
   if (data.name) data.slug = slugify(data.name, { lower: true, strict: true });
+
+  // Handle empty parentId
+  if (data.parentId === '') data.parentId = null;
+
   const category = await prisma.category.update({ where: { id: req.params.id }, data });
   res.json({ success: true, data: { category } });
 }));

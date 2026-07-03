@@ -141,11 +141,11 @@ export default function AdminSettingsPage() {
         <SettingGroup title="Shipping & Payments">
           <div className="form-row">
             <div className="form-group">
-              <label className="form-label">Free Shipping Threshold (GH₵)</label>
+              <label className="form-label">Free Shipping Threshold (₦)</label>
               <input type="number" className="form-input" value={settings.free_shipping_threshold} onChange={set('free_shipping_threshold')} />
             </div>
             <div className="form-group">
-              <label className="form-label">Default Shipping Fee (GH₵)</label>
+              <label className="form-label">Default Shipping Fee (₦)</label>
               <input type="number" className="form-input" value={settings.default_shipping_fee} onChange={set('default_shipping_fee')} />
             </div>
           </div>
@@ -154,11 +154,11 @@ export default function AdminSettingsPage() {
         <SettingGroup title="Loyalty Program">
           <div className="form-row">
             <div className="form-group">
-              <label className="form-label">Points per GH₵1 Spent</label>
+              <label className="form-label">Points per ₦1 Spent</label>
               <input type="number" className="form-input" value={settings.loyalty_points_per_naira} onChange={set('loyalty_points_per_naira')} />
             </div>
             <div className="form-group">
-              <label className="form-label">GH₵ Value per Point</label>
+              <label className="form-label">₦ Value per Point</label>
               <input type="number" className="form-input" step="0.1" value={settings.loyalty_naira_per_point} onChange={set('loyalty_naira_per_point')} />
             </div>
             <div className="form-group">

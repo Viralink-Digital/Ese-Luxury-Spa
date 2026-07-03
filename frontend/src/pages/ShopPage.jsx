@@ -1,7 +1,7 @@
 // src/pages/ShopPage.jsx
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { useSearchParams, useParams } from 'react-router-dom';
-import { useQuery } from '@tanstack/react-query';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { SlidersHorizontal, X, ChevronDown, ChevronUp, Search, LayoutGrid, List } from 'lucide-react';
 import { productApi, categoryApi, brandApi } from '@/lib/api';
 import ProductCard from '@/components/shop/ProductCard';
@@ -17,11 +17,11 @@ const SORT_OPTIONS = [
 ];
 
 const PRICE_RANGES = [
-  { label: 'Under GH₵5,000', min: 0, max: 5000 },
-  { label: 'GH₵5,000 – GH₵15,000', min: 5000, max: 15000 },
-  { label: 'GH₵15,000 – GH₵30,000', min: 15000, max: 30000 },
-  { label: 'GH₵30,000 – GH₵50,000', min: 30000, max: 50000 },
-  { label: 'Over GH₵50,000', min: 50000, max: undefined },
+  { label: 'Under ₦5,000', min: 0, max: 5000 },
+  { label: '₦5,000 – ₦15,000', min: 5000, max: 15000 },
+  { label: '₦15,000 – ₦30,000', min: 15000, max: 30000 },
+  { label: '₦30,000 – ₦50,000', min: 30000, max: 50000 },
+  { label: 'Over ₦50,000', min: 50000, max: undefined },
 ];
 
 export default function ShopPage() {
@@ -30,13 +30,36 @@ export default function ShopPage() {
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [viewMode, setViewMode] = useState('grid');
   const [openSections, setOpenSections] = useState({ categories: true, brands: true, price: true, ratings: false });
+  const queryClient = useQueryClient();
+
+  // Auto-refresh product data when page gets focus (user returns from editing a product)
+  useEffect(() => {
+    const handleFocus = () => {
+      queryClient.invalidateQueries({ queryKey: ['products'] });
+    };
+    window.addEventListener('focus', handleFocus);
+    return () => window.removeEventListener('focus', handleFocus);
+  }, [queryClient]);
+
+  // Handle special categories: skin-care, makeup, hair-care should use search-based filtering
+  const isSpecialCategory = categorySlug === 'skin-care' || categorySlug === 'makeup' || categorySlug === 'hair-care';
+  
+  // Use search terms for broader category coverage
+  const searchTerm = isSpecialCategory ? 
+    (categorySlug === 'skin-care' ? 'skin' : 
+     categorySlug === 'makeup' ? 'makeup' : 
+     categorySlug === 'hair-care' ? 'hair' : 
+     (searchParams.get('search') || undefined)) : 
+    (searchParams.get('search') || undefined);
+
+  const categoryFilter = isSpecialCategory ? undefined : (categorySlug || searchParams.get('category') || undefined);
 
   const params = {
     page: searchParams.get('page') || 1,
     limit: 20,
     sort: searchParams.get('sort') || 'newest',
-    search: searchParams.get('search') || undefined,
-    category: categorySlug || searchParams.get('category') || undefined,
+    search: searchTerm,
+    category: categoryFilter,
     brand: searchParams.get('brand') || undefined,
     minPrice: searchParams.get('minPrice') || undefined,
     maxPrice: searchParams.get('maxPrice') || undefined,
@@ -46,12 +69,17 @@ export default function ShopPage() {
     rating: searchParams.get('rating') || undefined,
   };
 
-  const { data, isLoading, isFetching } = useQuery({
+  const { data, isLoading, isFetching, error } = useQuery({
     queryKey: ['products', params],
     queryFn: () => productApi.list(params),
     select: (r) => r.data.data,
     keepPreviousData: true,
   });
+
+  // Error handling
+  if (error) {
+    console.error('Products loading error:', error);
+  }
 
   const { data: categories } = useQuery({
     queryKey: ['categories'],
@@ -100,9 +128,15 @@ export default function ShopPage() {
         {/* Header */}
         <div className="shop-header">
           <div>
-            <p className="section-eyebrow">{categorySlug ? categorySlug.replace(/-/g, ' ') : 'All Products'}</p>
+            <p className="section-eyebrow">
+              {isSpecialCategory ? categorySlug.replace(/-/g, ' ').toUpperCase() :
+               categorySlug ? categorySlug.replace(/-/g, ' ') : 'All Products'}
+            </p>
             <h1 className="shop-header__title">
-              {data?.pagination?.total || 0} Products
+              {isSpecialCategory ? 
+                `${categorySlug.replace(/-/g, ' ')} Products (${data?.pagination?.total || 0})` :
+               `${data?.pagination?.total || 0} Products`
+              }
             </h1>
           </div>
           <div className="shop-controls">
