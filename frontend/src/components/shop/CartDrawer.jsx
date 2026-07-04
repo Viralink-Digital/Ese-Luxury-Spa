@@ -84,7 +84,7 @@ export default function CartDrawer() {
               </p>
             ) : (
               <p className="cart-shipping-bar__msg">
-                Add <strong>₦{remaining.toLocaleString()}</strong> more for free shipping
+                Add <strong>₵{remaining.toLocaleString()}</strong> more for free shipping
               </p>
             )}
             <div className="cart-shipping-bar__track">
@@ -163,7 +163,7 @@ export default function CartDrawer() {
                           <Plus size={12} />
                         </button>
                       </div>
-                      <span className="cart-item__price">₦{(price * item.quantity).toLocaleString()}</span>
+                      <span className="cart-item__price">₵{(price * item.quantity).toLocaleString()}</span>
                     </div>
                   </div>
 
@@ -185,7 +185,7 @@ export default function CartDrawer() {
           <div className="cart-drawer__footer">
             <div className="cart-subtotal">
               <span>Subtotal</span>
-              <span className="cart-subtotal__amount">₦{parseFloat(total).toLocaleString()}</span>
+              <span className="cart-subtotal__amount">₵{parseFloat(total).toLocaleString()}</span>
             </div>
             <p className="cart-tax-note">Shipping calculated at checkout</p>
             <Link

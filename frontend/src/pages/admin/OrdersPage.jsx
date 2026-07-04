@@ -57,7 +57,7 @@ export default function AdminOrdersPage() {
                       <div className="admin-table__sub">{o.user?.phone}</div>
                     </td>
                     <td>{o.items?.length || 0} item(s)</td>
-                    <td>₦{parseFloat(o.total).toLocaleString()}</td>
+                    <td>₵{parseFloat(o.total).toLocaleString()}</td>
                     <td>
                       <span className={`badge badge--${o.paymentStatus === 'PAID' ? 'green' : o.paymentStatus === 'FAILED' ? 'red' : 'yellow'}`}>
                         {o.paymentStatus}

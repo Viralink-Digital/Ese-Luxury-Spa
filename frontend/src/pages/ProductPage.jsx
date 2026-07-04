@@ -167,11 +167,11 @@ export default function ProductPage() {
             {/* Price */}
             <div className="product-price">
               <span className="product-price__current">
-                ₦{parseFloat(price).toLocaleString()}
+                ₵{parseFloat(price).toLocaleString()}
               </span>
               {comparePrice && (
                 <span className="product-price__original">
-                  ₦{parseFloat(comparePrice).toLocaleString()}
+                  ₵{parseFloat(comparePrice).toLocaleString()}
                 </span>
               )}
               {discount > 0 && (
@@ -242,13 +242,13 @@ export default function ProductPage() {
                 setTimeout(() => window.location.href = '/checkout', 600);
               }}
             >
-              Buy Now — ₦{(parseFloat(price) * qty).toLocaleString()}
+              Buy Now — ₵{(parseFloat(price) * qty).toLocaleString()}
             </button>
 
             {/* Trust Badges */}
             <div className="product-trust">
               {[
-                { Icon: Package, text: 'Free delivery over ₦15,000' },
+                { Icon: Package, text: 'Free delivery over ₵15,000' },
                 { Icon: RotateCcw, text: '14-day easy returns' },
                 { Icon: Check, text: '100% authentic product' },
               ].map(({ Icon, text }) => (

@@ -415,8 +415,8 @@ CSS variables in `src/styles/globals.css` cover spacing, radii, shadows, transit
 
 ## 🏆 Loyalty System
 
-- Earn 1 point per ₦1 spent
-- 2 points = ₦1 discount
+- Earn 1 point per ₵1 spent
+- 2 points = ₵1 discount
 - 500 bonus points for referrals
 - Points expire after 12 months
 

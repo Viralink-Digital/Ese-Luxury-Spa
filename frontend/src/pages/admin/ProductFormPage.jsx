@@ -250,11 +250,11 @@ export default function AdminProductFormPage() {
               </div>
               <div className="form-row">
                 <div className="form-group">
-                  <label className="form-label">Base Price (₦) <span className="form-required">*</span></label>
+                  <label className="form-label">Base Price (₵) <span className="form-required">*</span></label>
                   <input type="number" className="form-input" placeholder="0.00" value={form.basePrice} onChange={set('basePrice')} />
                 </div>
                 <div className="form-group">
-                  <label className="form-label">Compare Price (₦)</label>
+                  <label className="form-label">Compare Price (₵)</label>
                   <input type="number" className="form-input" placeholder="Original price" value={form.comparePrice} onChange={set('comparePrice')} />
                 </div>
               </div>
@@ -349,7 +349,7 @@ export default function AdminProductFormPage() {
                         {['shade', 'color', 'size', 'volume', 'scent'].map((t) => <option key={t}>{t}</option>)}
                       </select>
                       <input type="text" className="form-input form-input--sm" placeholder="Value" value={v.value} onChange={(e) => updateVariant(i, 'value', e.target.value)} />
-                      <input type="number" className="form-input form-input--sm" placeholder="Price (₦)" value={v.price} onChange={(e) => updateVariant(i, 'price', e.target.value)} />
+                      <input type="number" className="form-input form-input--sm" placeholder="Price (₵)" value={v.price} onChange={(e) => updateVariant(i, 'price', e.target.value)} />
                       <input type="number" className="form-input form-input--sm" placeholder="Stock" value={v.stockQty} onChange={(e) => updateVariant(i, 'stockQty', e.target.value)} />
                       <button className="admin-action-btn admin-action-btn--delete" onClick={() => {
                         setForm((f) => ({ ...f, variants: f.variants.filter((_, idx) => idx !== i) }));

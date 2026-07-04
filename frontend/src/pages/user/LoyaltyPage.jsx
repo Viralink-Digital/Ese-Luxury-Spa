@@ -15,10 +15,10 @@ export default function LoyaltyPage() {
           <div className="loyalty-hero__icon"><Star size={32} /></div>
           <div className="loyalty-hero__points">{data?.points?.toLocaleString() || 0}</div>
           <div className="loyalty-hero__label">Total Points</div>
-          <div className="loyalty-hero__value">≈ ₦{((data?.points || 0) * 0.5).toLocaleString()} value</div>
+          <div className="loyalty-hero__value">≈ ₵{((data?.points || 0) * 0.5).toLocaleString()} value</div>
         </div>
         <div className="loyalty-info">
-          {[{ Icon: TrendingUp, title: 'Earn Points', desc: 'Get 1 point for every ₦1 spent on orders' }, { Icon: Gift, title: 'Redeem Points', desc: '2 points = ₦1 discount on your next order' }].map(({ Icon, title, desc }) => (
+          {[{ Icon: TrendingUp, title: 'Earn Points', desc: 'Get 1 point for every ₵1 spent on orders' }, { Icon: Gift, title: 'Redeem Points', desc: '2 points = ₵1 discount on your next order' }].map(({ Icon, title, desc }) => (
             <div key={title} className="loyalty-info-card"><div className="loyalty-info-icon"><Icon size={20} /></div><div><strong>{title}</strong><p>{desc}</p></div></div>
           ))}
         </div>

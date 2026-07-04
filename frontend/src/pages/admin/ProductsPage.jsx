@@ -125,9 +125,9 @@ export default function AdminProductsPage() {
                     <td>{p.category?.name || '—'}</td>
                     <td>
                       <div>
-                        <span className="admin-price">₦{parseFloat(p.basePrice).toLocaleString()}</span>
+                        <span className="admin-price">₵{parseFloat(p.basePrice).toLocaleString()}</span>
                         {p.comparePrice && (
-                          <span className="admin-price--compare">₦{parseFloat(p.comparePrice).toLocaleString()}</span>
+                          <span className="admin-price--compare">₵{parseFloat(p.comparePrice).toLocaleString()}</span>
                         )}
                       </div>
                     </td>

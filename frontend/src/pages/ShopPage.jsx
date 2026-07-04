@@ -17,11 +17,11 @@ const SORT_OPTIONS = [
 ];
 
 const PRICE_RANGES = [
-  { label: 'Under ₦5,000', min: 0, max: 5000 },
-  { label: '₦5,000 – ₦15,000', min: 5000, max: 15000 },
-  { label: '₦15,000 – ₦30,000', min: 15000, max: 30000 },
-  { label: '₦30,000 – ₦50,000', min: 30000, max: 50000 },
-  { label: 'Over ₦50,000', min: 50000, max: undefined },
+  { label: 'Under ₵5,000', min: 0, max: 5000 },
+  { label: '₵5,000 – ₵15,000', min: 5000, max: 15000 },
+  { label: '₵15,000 – ₵30,000', min: 15000, max: 30000 },
+  { label: '₵30,000 – ₵50,000', min: 30000, max: 50000 },
+  { label: 'Over ₵50,000', min: 50000, max: undefined },
 ];
 
 export default function ShopPage() {

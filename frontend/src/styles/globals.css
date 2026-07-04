@@ -1511,6 +1511,17 @@ h6 {
   }
 }
 
+.trust-grid--stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.trust-grid--stacked .trust-item {
+  width: 100%;
+  align-items: flex-start;
+}
+
 /* ─── HERO ───────────────────────────────────────────────── */
 .hero {
   position: relative;

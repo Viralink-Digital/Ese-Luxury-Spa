@@ -34,14 +34,14 @@ export default function AdminCouponsPage() {
             <div className="form-group"><label className="form-label">Type</label>
               <select className="form-input" value={form.type} onChange={set('type')}>
                 <option value="PERCENTAGE">Percentage (%)</option>
-                <option value="FIXED_AMOUNT">Fixed Amount (₦)</option>
+                <option value="FIXED_AMOUNT">Fixed Amount (₵)</option>
                 <option value="FREE_SHIPPING">Free Shipping</option>
               </select>
             </div>
             <div className="form-group"><label className="form-label">Value</label><input type="number" className="form-input" placeholder={form.type === 'PERCENTAGE' ? '20' : '5000'} value={form.value} onChange={set('value')} /></div>
           </div>
           <div className="form-row">
-            <div className="form-group"><label className="form-label">Min Order (₦)</label><input type="number" className="form-input" value={form.minOrderAmount} onChange={set('minOrderAmount')} /></div>
+            <div className="form-group"><label className="form-label">Min Order (₵)</label><input type="number" className="form-input" value={form.minOrderAmount} onChange={set('minOrderAmount')} /></div>
             <div className="form-group"><label className="form-label">Max Uses</label><input type="number" className="form-input" value={form.maxUses} onChange={set('maxUses')} /></div>
             <div className="form-group"><label className="form-label">Per User Limit</label><input type="number" className="form-input" value={form.perUserLimit} onChange={set('perUserLimit')} /></div>
           </div>
@@ -59,8 +59,8 @@ export default function AdminCouponsPage() {
               <tr key={c.id}>
                 <td className="mono"><strong>{c.code}</strong></td>
                 <td>{c.type}</td>
-                <td>{c.type === 'PERCENTAGE' ? `${c.value}%` : `₦${parseFloat(c.value).toLocaleString()}`}</td>
-                <td>{c.minOrderAmount ? `₦${parseFloat(c.minOrderAmount).toLocaleString()}` : '—'}</td>
+                <td>{c.type === 'PERCENTAGE' ? `${c.value}%` : `₵${parseFloat(c.value).toLocaleString()}`}</td>
+                <td>{c.minOrderAmount ? `₵${parseFloat(c.minOrderAmount).toLocaleString()}` : '—'}</td>
                 <td>{c.usedCount} / {c.maxUses || '∞'}</td>
                 <td><span className={`badge badge--${c.isActive ? 'green' : 'red'}`}>{c.isActive ? 'Active' : 'Inactive'}</span></td>
                 <td>

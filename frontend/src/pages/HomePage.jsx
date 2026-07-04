@@ -17,7 +17,7 @@ import ecoFriendlyImage from '@/styles/eco-friendly.jpg';
 import pinkStampImage from '@/styles/pink-stamp.jpg';
 
 const TRUST_BADGES = [
-  { Icon: Truck, title: 'Free Delivery', sub: 'Orders over ₦15,000' },
+  { Icon: Truck, title: 'Free Delivery', sub: 'Orders over ₵15,000' },
   { Icon: Shield, title: '100% Authentic', sub: 'Certified products only' },
   { Icon: RotateCcw, title: 'Easy Returns', sub: '14-day return policy' },
   { Icon: Headphones, title: '24/7 Support', sub: 'Always here for you' },
@@ -104,7 +104,7 @@ export default function HomePage() {
               <p className="section-sub">Discover luxury essentials, trusted service, and a storefront designed to feel as elegant as the products themselves.</p>
             </div>
           </div>
-          <div className="trust-grid">
+          <div className="trust-grid trust-grid--stacked">
             {HIGHLIGHT_CARDS.map(({ title, sub }) => (
               <article key={title} className="trust-item" style={{ background: 'var(--white)', borderRadius: 'var(--radius-lg)', padding: '16px', boxShadow: 'var(--shadow-sm)' }}>
                 <div className="trust-item__icon">

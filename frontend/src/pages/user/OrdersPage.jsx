@@ -34,7 +34,7 @@ export default function OrdersPage() {
                 {o.items?.length > 3 && <span className="order-card__more">+{o.items.length - 3} more</span>}
               </div>
               <div className="order-card__footer">
-                <span>₦{parseFloat(o.total).toLocaleString()}</span>
+                <span>₵{parseFloat(o.total).toLocaleString()}</span>
                 <span>{new Date(o.createdAt).toLocaleDateString()}</span>
                 <ChevronRight size={16} />
               </div>

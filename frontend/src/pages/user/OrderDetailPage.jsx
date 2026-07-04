@@ -36,14 +36,14 @@ export default function OrderDetailPage() {
             <div key={item.id} className="order-item">
               <img src={item.image} alt={item.name} className="order-item__img" />
               <div className="order-item__info"><p className="order-item__name">{item.name}</p><p className="order-item__meta">Qty: {item.quantity}</p></div>
-              <span className="order-item__total">₦{parseFloat(item.total).toLocaleString()}</span>
+              <span className="order-item__total">₵{parseFloat(item.total).toLocaleString()}</span>
             </div>
           ))}
           <div className="order-totals">
-            <div className="order-total-row"><span>Subtotal</span><span>₦{parseFloat(order.subtotal).toLocaleString()}</span></div>
-            {parseFloat(order.discount) > 0 && <div className="order-total-row order-total-row--discount"><span>Discount</span><span>-₦{parseFloat(order.discount).toLocaleString()}</span></div>}
-            <div className="order-total-row"><span>Shipping</span><span>₦{parseFloat(order.shippingFee).toLocaleString()}</span></div>
-            <div className="order-total-row order-total-row--total"><span>Total</span><span>₦{parseFloat(order.total).toLocaleString()}</span></div>
+            <div className="order-total-row"><span>Subtotal</span><span>₵{parseFloat(order.subtotal).toLocaleString()}</span></div>
+            {parseFloat(order.discount) > 0 && <div className="order-total-row order-total-row--discount"><span>Discount</span><span>-₵{parseFloat(order.discount).toLocaleString()}</span></div>}
+            <div className="order-total-row"><span>Shipping</span><span>₵{parseFloat(order.shippingFee).toLocaleString()}</span></div>
+            <div className="order-total-row order-total-row--total"><span>Total</span><span>₵{parseFloat(order.total).toLocaleString()}</span></div>
           </div>
         </div>
         {order.trackingNumber && (
