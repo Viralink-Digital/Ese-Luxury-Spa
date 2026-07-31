@@ -7,7 +7,9 @@ import { cartApi, wishlistApi } from '@/lib/api';
 import { useAuthStore } from '@/store/auth.store';
 import { useCartStore } from '@/store/cart.store';
 import { useUiStore } from '@/store/cart.store';
+import { useCurrencyStore } from '@/store/currency.store';
 import toast from 'react-hot-toast';
+import { formatDualPrice } from '@/lib/price';
 
 export default function ProductCard({ product, delay = 0, listView = false }) {
   const [wishlisted, setWishlisted] = useState(false);
@@ -15,6 +17,7 @@ export default function ProductCard({ product, delay = 0, listView = false }) {
   const { isAuthenticated } = useAuthStore();
   const { addItem } = useCartStore();
   const { setCartOpen } = useUiStore();
+  const ghanaNairaRate = useCurrencyStore((state) => state.ghanaNairaRate);
   const queryClient = useQueryClient();
 
   const addToCartMutation = useMutation({
@@ -52,6 +55,8 @@ export default function ProductCard({ product, delay = 0, listView = false }) {
   const discount = product.comparePrice
     ? Math.round(((product.comparePrice - product.basePrice) / product.comparePrice) * 100)
     : 0;
+  const currentPrice = formatDualPrice(product.basePrice, ghanaNairaRate);
+  const originalPrice = formatDualPrice(product.comparePrice, ghanaNairaRate);
 
   if (listView) {
     return (
@@ -68,8 +73,11 @@ export default function ProductCard({ product, delay = 0, listView = false }) {
             <span className="product-card__reviews">({product.reviewCount})</span>
           </div>
           <div className="product-card__price">
-            <span className="product-card__price-current">₵{parseFloat(product.basePrice).toLocaleString()}</span>
-            {product.comparePrice && <span className="product-card__price-original">₵{parseFloat(product.comparePrice).toLocaleString()}</span>}
+            <div className="product-card__price-stack">
+              <span className="product-card__price-current">{currentPrice.cedi}</span>
+              <span className="product-card__price-naira">{currentPrice.naira}</span>
+            </div>
+            {product.comparePrice && <span className="product-card__price-original">{originalPrice.cedi}</span>}
           </div>
         </div>
         <div className="product-card__actions">
@@ -147,9 +155,12 @@ export default function ProductCard({ product, delay = 0, listView = false }) {
         </div>
 
         <div className="product-card__price">
-          <span className="product-card__price-current">₵{parseFloat(product.basePrice).toLocaleString()}</span>
+          <div className="product-card__price-stack">
+            <span className="product-card__price-current">{currentPrice.cedi}</span>
+            <span className="product-card__price-naira">{currentPrice.naira}</span>
+          </div>
           {product.comparePrice && (
-            <span className="product-card__price-original">₵{parseFloat(product.comparePrice).toLocaleString()}</span>
+            <span className="product-card__price-original">{originalPrice.cedi}</span>
           )}
         </div>
       </div>

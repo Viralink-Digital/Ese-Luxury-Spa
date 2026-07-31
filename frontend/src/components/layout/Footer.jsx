@@ -103,15 +103,15 @@ export default function Footer() {
               <div className="footer__contact">
                 <div className="footer__contact-item">
                   <MapPin size={14} />
-                  <span>Victoria Island, Lagos, Nigeria</span>
+                  <span>61 Lokko Road, Osu, Behind Karena Cake, Accra, Ghana</span>
                 </div>
                 <div className="footer__contact-item">
                   <Phone size={14} />
-                  <span>+233 800 ESE LUXE</span>
+                  <span>0534533217 / 0500169264</span>
                 </div>
                 <div className="footer__contact-item">
                   <Mail size={14} />
-                  <span>hello@eseluxury.com</span>
+                  <span>hello@eseluxuryspa.com</span>
                 </div>
               </div>
               <div className="footer__socials">

@@ -1,6 +1,6 @@
 // src/App.jsx
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query';
 import { QueryClientProvider as QCP } from '@tanstack/react-query';
 import { Toaster } from 'react-hot-toast';
 
@@ -50,6 +50,8 @@ import AdminReviews from '@/pages/admin/ReviewsPage';
 import AdminBanners from '@/pages/admin/BannersPage';
 import AdminSettings from '@/pages/admin/SettingsPage';
 import AdminInventory from '@/pages/admin/InventoryPage';
+import { currencyApi } from '@/lib/api';
+import { useCurrencyStore } from '@/store/currency.store';
 
 import ProtectedRoute from '@/components/auth/ProtectedRoute';
 import AdminRoute from '@/components/auth/AdminRoute';
@@ -64,9 +66,26 @@ const queryClient = new QueryClient({
   },
 });
 
+function CurrencyLoader() {
+  const setGhanaNairaRate = useCurrencyStore((state) => state.setGhanaNairaRate);
+
+  useQuery({
+    queryKey: ['currency-rate'],
+    queryFn: () => currencyApi.rate(),
+    select: (res) => res.data.data,
+    staleTime: 1000 * 60 * 30,
+    onSuccess: (data) => setGhanaNairaRate(data.rate),
+    onError: () => setGhanaNairaRate(900),
+    retry: false,
+  });
+
+  return null;
+}
+
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
+      <CurrencyLoader />
       <BrowserRouter>
         <Toaster
           position="top-center"

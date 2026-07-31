@@ -60,7 +60,7 @@ export default function Navbar({ siteSettings = {} }) {
     <>
       {/* Announcement Bar */}
       <div className="announcement-bar">
-        <span>Call Us: +233 800 ESE LUXE</span>
+        <span>Call Us: 0534533217 / 0500169264</span>
         <span className="announcement-center">
           Sign up and get <strong>20% OFF</strong> your first order.{' '}
           <Link to="/register" className="announcement-link">Sign up now</Link>
