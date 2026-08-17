@@ -21,7 +21,7 @@ fi
 
 echo ""
 echo "[2/6] Checking Docker MySQL Container..."
-if ! docker ps | grep -q "ese_luxury_mysql"; then
+if ! docker ps | grep -q "sql3835439_mysql"; then
     echo "❌ MySQL container not running. Starting it..."
     docker-compose up -d mysql
     sleep 5
