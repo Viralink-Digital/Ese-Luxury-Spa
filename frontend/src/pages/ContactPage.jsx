@@ -34,9 +34,9 @@ export default function ContactPage() {
           <div className="contact-info">
             <h2 className="contact-info__title">Contact Information</h2>
             {[
-              { Icon: MapPin, title: 'Visit Us', lines: ['Ese Luxury Cosmetics', 'Victoria Island, Lagos, Nigeria'] },
-              { Icon: Phone, title: 'Call Us', lines: ['+233 800 ESE LUXE', 'Mon–Sat: 9am – 6pm WAT'] },
-              { Icon: Mail, title: 'Email Us', lines: ['hello@eseluxury.com', 'support@eseluxury.com'] },
+              { Icon: MapPin, title: 'Visit Us', lines: ['Ese Luxury Cosmetics', '61 Lokko Road, Osu, Behind Karena Cake, Accra, Ghana'] },
+              { Icon: Phone, title: 'Call Us', lines: ['0534533217 / 0500169264', 'Mon–Sat: 9am – 6pm GMT'] },
+              { Icon: Mail, title: 'Email Us', lines: ['hello@eseluxuryspa.com'] },
               { Icon: Clock, title: 'Business Hours', lines: ['Monday – Saturday: 9:00 AM – 6:00 PM', 'Sunday: 12:00 PM – 4:00 PM'] },
             ].map(({ Icon, title, lines }) => (
               <div key={title} className="contact-info-item">

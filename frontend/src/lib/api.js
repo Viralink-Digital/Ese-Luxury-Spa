@@ -100,6 +100,10 @@ export const productApi = {
   delete: (id) => api.delete(`/products/${id}`),
 };
 
+export const currencyApi = {
+  rate: () => api.get('/currency/rate'),
+};
+
 export const categoryApi = {
   list: () => api.get('/categories'),
   get: (slug) => api.get(`/categories/${slug}`),

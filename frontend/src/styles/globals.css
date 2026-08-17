@@ -649,11 +649,20 @@ h6 {
   gap: 8px;
   margin-top: auto;
 }
+.product-card__price-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 .product-card__price-current {
   font-size: 1rem;
   font-weight: 700;
   color: var(--black);
   font-family: var(--font-heading);
+}
+.product-card__price-naira {
+  font-size: 0.72rem;
+  color: var(--gray-500);
 }
 .product-card__price-original {
   font-size: 0.8rem;
@@ -3692,15 +3701,25 @@ h6 {
 }
 .product-price {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 12px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.product-price__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 .product-price__current {
   font-family: var(--font-heading);
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--black);
+}
+.product-price__naira {
+  font-size: 0.95rem;
+  color: var(--gray-500);
 }
 .product-price__original {
   font-size: 1.1rem;

@@ -11,6 +11,7 @@ frontend/.env
 logs/
 backend/logs/
 *.log
+backend/logs/*.log
 
 # Build files
 frontend/dist/

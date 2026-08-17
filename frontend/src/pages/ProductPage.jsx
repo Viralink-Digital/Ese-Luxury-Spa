@@ -10,8 +10,10 @@ import { productApi, cartApi, wishlistApi, reviewApi } from '@/lib/api';
 import { useAuthStore } from '@/store/auth.store';
 import { useCartStore } from '@/store/cart.store';
 import { useUiStore } from '@/store/cart.store';
+import { useCurrencyStore } from '@/store/currency.store';
 import ProductCard from '@/components/shop/ProductCard';
 import toast from 'react-hot-toast';
+import { formatDualPrice } from '@/lib/price';
 
 export default function ProductPage() {
   const { slug } = useParams();
@@ -23,6 +25,7 @@ export default function ProductPage() {
   const { isAuthenticated } = useAuthStore();
   const { addItem } = useCartStore();
   const { setCartOpen } = useUiStore();
+  const ghanaNairaRate = useCurrencyStore((state) => state.ghanaNairaRate);
   const queryClient = useQueryClient();
 
   const { data: product, isLoading } = useQuery({
@@ -71,6 +74,8 @@ export default function ProductPage() {
   const discount = comparePrice
     ? Math.round(((comparePrice - price) / comparePrice) * 100)
     : 0;
+  const formattedPrice = formatDualPrice(price, ghanaNairaRate);
+  const formattedComparePrice = formatDualPrice(comparePrice, ghanaNairaRate);
 
   const handleAddToCart = () => {
     if (!isAuthenticated) {
@@ -166,13 +171,12 @@ export default function ProductPage() {
 
             {/* Price */}
             <div className="product-price">
-              <span className="product-price__current">
-                ₵{parseFloat(price).toLocaleString()}
-              </span>
+              <div className="product-price__stack">
+                <span className="product-price__current">{formattedPrice.cedi}</span>
+                <span className="product-price__naira">{formattedPrice.naira}</span>
+              </div>
               {comparePrice && (
-                <span className="product-price__original">
-                  ₵{parseFloat(comparePrice).toLocaleString()}
-                </span>
+                <span className="product-price__original">{formattedComparePrice.cedi}</span>
               )}
               {discount > 0 && (
                 <span className="product-price__badge">{discount}% OFF</span>

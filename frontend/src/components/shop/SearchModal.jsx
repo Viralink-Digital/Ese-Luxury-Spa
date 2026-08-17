@@ -4,12 +4,15 @@ import { Link } from 'react-router-dom';
 import { Search, X, TrendingUp, ArrowRight } from 'lucide-react';
 import { useQuery } from '@tanstack/react-query';
 import { productApi } from '@/lib/api';
+import { useCurrencyStore } from '@/store/currency.store';
 import { useUiStore } from '@/store/cart.store';
+import { formatDualPrice } from '@/lib/price';
 
 const TRENDING = ['Rose Serum', 'Lip Gloss', 'Sunscreen', 'Body Butter', 'Face Mask'];
 
 export default function SearchModal() {
   const { searchOpen, setSearchOpen } = useUiStore();
+  const ghanaNairaRate = useCurrencyStore((state) => state.ghanaNairaRate);
   const [query, setQuery] = useState('');
   const inputRef = useRef(null);
 
@@ -112,7 +115,7 @@ export default function SearchModal() {
                     <p className="search-result__name">{p.name}</p>
                     <p className="search-result__cat">{p.category?.name}</p>
                   </div>
-                  <span className="search-result__price">₵{parseFloat(p.basePrice).toLocaleString()}</span>
+                  <span className="search-result__price">{formatDualPrice(p.basePrice, ghanaNairaRate).cedi}</span>
                   <ArrowRight size={14} className="search-result__arrow" />
                 </Link>
               ))}
