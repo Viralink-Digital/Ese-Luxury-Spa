@@ -1,6 +1,6 @@
 # Ese Luxury Spa - PowerShell Startup Script
 Write-Host "========================================" -ForegroundColor Cyan
-Write-Host "  Ese Luxury Spa - PowerShell Start" -ForegroundColor Cyan
+Write-Host "  Ese Luxury Platform - PowerShell Start" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
@@ -11,12 +11,12 @@ Start-Sleep -Seconds 2
 
 # Start Backend
 Write-Host "Starting Backend..." -ForegroundColor Green
-Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd C:\Users\COMPUTER\Desktop\Ese-Luxury-Spa\backend; npm run dev" -WindowStyle Normal
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd D:\xampp\htdocs\ese-luxury-platform\backend; npm run dev" -WindowStyle Normal
 Start-Sleep -Seconds 5
 
 # Start Frontend
 Write-Host "Starting Frontend..." -ForegroundColor Green
-Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd C:\Users\COMPUTER\Desktop\Ese-Luxury-Spa\frontend; npm run dev" -WindowStyle Normal
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd D:\xampp\htdocs\ese-luxury-platform\frontend; npm run dev" -WindowStyle Normal
 
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Cyan

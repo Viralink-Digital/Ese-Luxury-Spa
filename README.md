@@ -216,7 +216,7 @@ npx prisma generate
 
 #### **Step 6: Seed Database with Sample Data**
 ```bash
-# If you have exported data from another installation
+# If you have exported data from another installation to add products
 .\seed-data.bat
 
 # Or create the default admin account
