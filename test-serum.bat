@@ -1,4 +1,4 @@
 @echo off
-cd C:\Users\COMPUTER\Desktop\Ese-Luxury-Spa\backend
+cd D:\xampp\htdocs\ese-luxury-platform\backend
 node src/scripts/testSkinCategory.js
 pause
