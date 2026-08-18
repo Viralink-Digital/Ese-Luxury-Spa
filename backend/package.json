@@ -13,8 +13,12 @@
     "seed": "node src/scripts/seedAdmin.js",
     "seed-from-export": "node src/scripts/seedFromExport.js",
     "export-data": "node src/scripts/exportDatabaseData.js",
-    "worker": "node src/jobs/worker.js"
+    "worker": "node src/jobs/worker.js",
+    "seed-products" :"node prisma/seed.js"
   },
+   "prisma" : {
+     "seed" : "node prisma/seed.js"
+   },
   "dependencies": {
     "@prisma/client": "^5.10.0",
     "axios": "^1.6.0",
