@@ -33,7 +33,7 @@ docker ps
 docker-compose up -d mysql
 
 # Verify database exists
-docker exec -it sql3835439_mysql mysql -uroot -proot -e "SHOW DATABASES;"
+docker exec -it u886225094_esecosmetics_mysql mysql -uroot -proot -e "SHOW DATABASES;"
 ```
 
 **Prevention:**
@@ -281,7 +281,7 @@ netstat -ano | findstr :5173
 
 # Check Docker containers
 docker ps
-docker logs sql3835439_mysql
+docker logs u886225094_esecosmetics_mysql
 
 # Check Node processes
 tasklist | findstr node

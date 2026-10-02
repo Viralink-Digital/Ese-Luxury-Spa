@@ -21,7 +21,7 @@ fi
 
 echo ""
 echo "[2/6] Checking Docker MySQL Container..."
-if ! docker ps | grep -q "sql3835439_mysql"; then
+if ! docker ps | grep -q "u886225094_esecosmetics_mysql"; then
     echo "❌ MySQL container not running. Starting it..."
     docker-compose up -d mysql
     sleep 5
@@ -80,7 +80,7 @@ echo "  🔧 Backend:  http://localhost:5000"
 echo "  🗄️  Database: MySQL on Docker (port 3307)"
 echo ""
 echo "  Admin Credentials:"
-echo "  Email: saviourbravo@gmail.com"
+echo "  Email: admin.esecosmetics.beauty"
 echo "  Password: Great gamer23"
 echo ""
 echo "  To stop servers: ./stop-dev.sh"

@@ -109,7 +109,7 @@ npm run worker
 
 The seed script creates or updates this super-admin account:
 
-- Email: saviourbravo@gmail.com
+- Email: admin.esecosmetics.beauty
 - Password: Great gamer23
 - Phone: 0550154253
 - Role: SUPER_ADMIN

@@ -12,7 +12,7 @@ async function main() {
   console.log('🌱 Seeding product images...')
 
   // Correct path for folder structure
-  const uploadsPath = path.join(__dirname, '..', 'src', 'uploads', 'products')
+  const uploadsPath = path.join(__dirname, '..', 'uploads', 'products')
   
   if (!fs.existsSync(uploadsPath)) {
     console.log('Uploads folder not found at:', uploadsPath)

@@ -2,11 +2,11 @@ version: '3.9'
 services:
   mysql:
     image: mysql:8.0
-    container_name: sql3835439_mysql
+    container_name: u886225094_esecosmetics_mysql
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: sql3835439
+      MYSQL_DATABASE: u886225094_esecosmetics
     ports:
       - '3307:3306'
     volumes:

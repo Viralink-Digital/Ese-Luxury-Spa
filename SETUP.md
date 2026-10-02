@@ -141,7 +141,7 @@ ese-luxury-spa/
 - **Database:** 3307 (Docker MySQL mapping)
 
 ### Admin Credentials
-- **Email:** saviourbravo@gmail.com
+- **Email:** admin.esecosmetics.beauty
 - **Password:** Great gamer23
 - **Phone:** 0550154253
 

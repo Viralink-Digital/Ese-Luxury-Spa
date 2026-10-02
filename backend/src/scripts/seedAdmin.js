@@ -2,7 +2,7 @@ import 'dotenv/config';
 import bcrypt from 'bcryptjs';
 import prisma from '../utils/db.js';
 
-const email = 'saviourbravo@gmail.com';
+const email = 'admin.esecosmetics.beauty';
 const password = 'Great gamer23';
 const phone = '0550154253';
 const name = 'Saviour Bravo';
