@@ -2,7 +2,7 @@
   "name": "ese-luxury-backend",
   "version": "1.0.0",
   "description": "Ese Luxury Cosmetics - Express API",
-  "main": "src/server.js",
+  "main": "startup.cjs",
   "type": "module",
   "scripts": {
     "dev": "nodemon src/server.js",
