@@ -1,6 +1,7 @@
 // src/components/home/TestimonialsSection.jsx
 import { useState } from 'react';
 import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import ApiImage from '@/components/ui/ApiImage';
 
 const FALLBACK_TESTIMONIALS = [
   { id: '1', name: 'Amaka Okonkwo', location: 'Lagos', rating: 5, body: 'Ese Luxury has completely transformed my skincare routine! The Rose Glow Serum is absolutely divine — my skin has never looked better. The packaging is so elegant too. Truly a luxury experience from start to finish!' },
@@ -45,7 +46,7 @@ export default function TestimonialsSection({ testimonials }) {
                 <div className="testimonial-card__author">
                   <div className="testimonial-card__avatar">
                     {t.avatar
-                      ? <img src={t.avatar} alt={t.name} />
+                      ? <ApiImage src={t.avatar} alt={t.name} />
                       : <span>{t.name[0]}</span>
                     }
                   </div>

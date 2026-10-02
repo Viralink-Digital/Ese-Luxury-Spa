@@ -7,6 +7,7 @@ import { useAuthStore } from '@/store/auth.store';
 import { useCartStore } from '@/store/cart.store';
 import { useUiStore } from '@/store/cart.store';
 import { cmsApi } from '@/lib/api';
+import ApiImage from '@/components/ui/ApiImage';
 
 
 const NAV_LINKS = [
@@ -76,7 +77,7 @@ export default function Navbar({ siteSettings = {} }) {
           {/* Logo */}
           <Link to="/" className="navbar__logo">
             {logoUrl ? (
-              <img
+              <ApiImage
                 src={logoUrl}
                 alt={settings.site_name || 'Ese Luxury Cosmetics'}
                 className="logo-img"
@@ -145,7 +146,7 @@ export default function Navbar({ siteSettings = {} }) {
               >
                 <button className="nav-icon-btn user-avatar-btn" aria-label="Account">
                   {user?.avatar ? (
-                    <img src={user.avatar} alt="" className="user-avatar" />
+                    <ApiImage src={user.avatar} alt="" className="user-avatar" />
                   ) : (
                     <div className="user-avatar-initials">
                       {(user?.firstName?.[0] || 'U').toUpperCase()}

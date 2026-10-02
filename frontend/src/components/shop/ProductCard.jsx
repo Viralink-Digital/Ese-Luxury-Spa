@@ -10,6 +10,8 @@ import { useUiStore } from '@/store/cart.store';
 import { useCurrencyStore } from '@/store/currency.store';
 import toast from 'react-hot-toast';
 import { formatDualPrice } from '@/lib/price';
+import ApiImage from '@/components/ui/ApiImage';
+import { getImageUrl } from '@/lib/image';
 
 export default function ProductCard({ product, delay = 0, listView = false }) {
   const [wishlisted, setWishlisted] = useState(false);
@@ -55,6 +57,16 @@ export default function ProductCard({ product, delay = 0, listView = false }) {
   const discount = product.comparePrice
     ? Math.round(((product.comparePrice - product.basePrice) / product.comparePrice) * 100)
     : 0;
+  const finalImageUrl = getImageUrl(product.primaryImage);
+
+  if (import.meta.env.DEV) {
+    console.log('PRODUCT IMAGE DEBUG', {
+      original: product.primaryImage,
+      images: product.images,
+      finalUrl: finalImageUrl,
+    });
+  }
+
   const currentPrice = formatDualPrice(product.basePrice, ghanaNairaRate);
   const originalPrice = formatDualPrice(product.comparePrice, ghanaNairaRate);
 
@@ -62,7 +74,7 @@ export default function ProductCard({ product, delay = 0, listView = false }) {
     return (
       <Link to={`/products/${product.slug}`} className="product-card product-card--list">
         <div className="product-card__img-wrap">
-          <img src={product.primaryImage || 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=300&h=300&fit=crop'} alt={product.name} className="product-card__img" loading="lazy" />
+          <ApiImage src={finalImageUrl} alt={product.name} className="product-card__img" loading="lazy" />
         </div>
         <div className="product-card__body">
           {product.brand && <span className="product-card__brand">{product.brand.name}</span>}
@@ -97,8 +109,8 @@ export default function ProductCard({ product, delay = 0, listView = false }) {
       onMouseLeave={() => setHovered(false)}
     >
       <div className="product-card__img-wrap">
-        <img
-          src={product.primaryImage || 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=300&h=360&fit=crop'}
+        <ApiImage
+          src={finalImageUrl}
           alt={product.name}
           className="product-card__img"
           loading="lazy"

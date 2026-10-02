@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import { Package, ChevronRight } from 'lucide-react';
 import { orderApi } from '@/lib/api';
+import ApiImage from '@/components/ui/ApiImage';
 
 const STATUS_COLORS = { PENDING: '#f59e0b', CONFIRMED: '#3b82f6', PROCESSING: '#8b5cf6', SHIPPED: '#06b6d4', DELIVERED: '#10b981', CANCELLED: '#ef4444' };
 
@@ -27,7 +28,7 @@ export default function OrdersPage() {
               <div className="order-card__items">
                 {o.items?.slice(0, 3).map((item, i) => (
                   <div key={i} className="order-card__item">
-                    <img src={item.image} alt={item.name} className="order-card__item-img" />
+                    <ApiImage src={item.image} alt={item.name} className="order-card__item-img" />
                     <span>{item.name}</span>
                   </div>
                 ))}

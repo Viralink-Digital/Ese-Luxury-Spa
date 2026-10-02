@@ -10,6 +10,7 @@ import {
 import { useAuthStore } from '@/store/auth.store';
 import { cmsApi } from '@/lib/api';
 import NotificationPanel from '@/components/admin/NotificationPanel';
+import ApiImage from '@/components/ui/ApiImage';
 
 const NAV_ITEMS = [
   { icon: LayoutDashboard, label: 'Dashboard', href: '/admin' },
@@ -48,7 +49,7 @@ export default function AdminLayout() {
         <div className="admin-sidebar__header">
           <Link to="/admin" className="admin-sidebar__logo">
             {logoUrl ? (
-              <img src={logoUrl} alt={siteName} className="admin-logo-image" />
+              <ApiImage src={logoUrl} alt={siteName} className="admin-logo-image" />
             ) : (
               <div className="admin-logo-mark">E</div>
             )}

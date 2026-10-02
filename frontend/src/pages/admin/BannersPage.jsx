@@ -4,6 +4,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Plus, Edit, Trash2, Loader2 } from 'lucide-react';
 import { cmsApi, uploadApi } from '@/lib/api';
 import toast from 'react-hot-toast';
+import ApiImage from '@/components/ui/ApiImage';
 
 const POSITIONS = ['HERO', 'PROMO_LEFT', 'PROMO_RIGHT', 'CATEGORY_TOP', 'SIDEBAR'];
 
@@ -67,7 +68,7 @@ export default function AdminBannersPage() {
             <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
               <input type="file" accept="image/*" onChange={handleImageUpload} style={{ flex: 1 }} />
               {uploading && <Loader2 size={16} className="spin" />}
-              {form.image && <img src={form.image} alt="" style={{ width: 80, height: 50, objectFit: 'cover', borderRadius: 8 }} />}
+              {form.image && <ApiImage src={form.image} alt="" style={{ width: 80, height: 50, objectFit: 'cover', borderRadius: 8 }} />}
             </div>
           </div>
           <div style={{ display: 'flex', gap: 8 }}>
@@ -82,7 +83,7 @@ export default function AdminBannersPage() {
           <tbody>
             {banners?.map((b) => (
               <tr key={b.id}>
-                <td><img src={b.image} alt={b.title} style={{ width: 80, height: 45, objectFit: 'cover', borderRadius: 6 }} /></td>
+                <td><ApiImage src={b.image} alt={b.title} style={{ width: 80, height: 45, objectFit: 'cover', borderRadius: 6 }} /></td>
                 <td><div>{b.title}</div>{b.badgeText && <div className="admin-table__sub">{b.badgeText}</div>}</td>
                 <td><span className="badge badge--purple">{b.position}</span></td>
                 <td>{b.ctaLabel ? <a href={b.ctaUrl} className="admin-link">{b.ctaLabel}</a> : '—'}</td>

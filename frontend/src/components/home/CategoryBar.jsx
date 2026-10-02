@@ -1,5 +1,6 @@
 // src/components/home/CategoryBar.jsx
 import { Link } from 'react-router-dom';
+import ApiImage from '@/components/ui/ApiImage';
 
 const SPECIAL_CATS = [
   { slug: 'skin-care', name: 'Skin Care', image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=80&h=80&fit=crop' },
@@ -26,7 +27,7 @@ export default function CategoryBar({ categories }) {
           {cats.map((cat) => (
             <Link key={cat.slug || cat.id} to={`/shop/${cat.slug}`} className="category-pill">
               <div className="category-pill__img">
-                <img
+                <ApiImage
                   src={cat.image || `https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=80&h=80&fit=crop`}
                   alt={cat.name}
                   loading="lazy"

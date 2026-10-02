@@ -4,6 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { ShoppingBag, Heart, MapPin, Star, Gift, User, ChevronRight } from 'lucide-react';
 import { useAuthStore } from '@/store/auth.store';
 import { userApi } from '@/lib/api';
+import ApiImage from '@/components/ui/ApiImage';
 
 export default function AccountPage() {
   const { user } = useAuthStore();
@@ -23,7 +24,7 @@ export default function AccountPage() {
         <div className="account-header">
           <div className="account-avatar">
             {user?.avatar
-              ? <img src={user.avatar} alt="avatar" />
+              ? <ApiImage src={user.avatar} alt="avatar" />
               : <span>{(user?.firstName?.[0] || 'U').toUpperCase()}</span>
             }
           </div>

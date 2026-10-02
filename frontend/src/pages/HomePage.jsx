@@ -15,6 +15,7 @@ import BeautyTips from '@/components/home/BeautyTips';
 import aboutUsImage from '@/styles/about us image.jpg';
 import ecoFriendlyImage from '@/styles/eco-friendly.jpg';
 import pinkStampImage from '@/styles/pink-stamp.jpg';
+import ApiImage from '@/components/ui/ApiImage';
 
 const TRUST_BADGES = [
   { Icon: Truck, title: 'Free Delivery', sub: 'Orders over ₵15,000' },
@@ -155,7 +156,7 @@ export default function HomePage() {
               cat ? (
                 <Link key={cat.id} to={`/shop/${cat.slug}`} className="category-card">
                   <div className="category-card__img-wrap">
-                    <img src={cat.image || `https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=200&h=200&fit=crop&q=80`} alt={cat.name} loading="lazy" />
+                    <ApiImage src={cat.image || `https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=200&h=200&fit=crop&q=80`} alt={cat.name} loading="lazy" />
                   </div>
                   <div className="category-card__name">{cat.name}</div>
                   <div className="category-card__count">{cat._count?.products || 0} Products</div>

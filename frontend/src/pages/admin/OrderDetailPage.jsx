@@ -5,6 +5,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { ArrowLeft, Loader2, Package, MapPin, CreditCard, Clock } from 'lucide-react';
 import { orderApi } from '@/lib/api';
 import toast from 'react-hot-toast';
+import ApiImage from '@/components/ui/ApiImage';
 
 const STATUS_FLOW = ['PENDING', 'CONFIRMED', 'PROCESSING', 'SHIPPED', 'DELIVERED'];
 const STATUS_COLORS = {
@@ -74,7 +75,7 @@ export default function AdminOrderDetailPage() {
           <h3 className="admin-card__title"><Package size={16} /> Order Items</h3>
           {order.items.map((item) => (
             <div key={item.id} className="order-item">
-              <img src={item.image} alt={item.name} className="order-item__img" />
+              <ApiImage src={item.image} alt={item.name} className="order-item__img" />
               <div className="order-item__info">
                 <p className="order-item__name">{item.name}</p>
                 <p className="order-item__meta">Qty: {item.quantity} × ₵{parseFloat(item.price).toLocaleString()}</p>

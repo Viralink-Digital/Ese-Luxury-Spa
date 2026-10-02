@@ -14,6 +14,7 @@ import { useCurrencyStore } from '@/store/currency.store';
 import ProductCard from '@/components/shop/ProductCard';
 import toast from 'react-hot-toast';
 import { formatDualPrice } from '@/lib/price';
+import ApiImage from '@/components/ui/ApiImage';
 
 export default function ProductPage() {
   const { slug } = useParams();
@@ -122,12 +123,12 @@ export default function ProductPage() {
                   className={`product-gallery__thumb ${selectedImg === i ? 'active' : ''}`}
                   onClick={() => setSelectedImg(i)}
                 >
-                  <img src={img.url} alt={img.altText || product.name} loading="lazy" />
+                  <ApiImage src={img.url} alt={img.altText || product.name} loading="lazy" />
                 </button>
               ))}
             </div>
             <div className="product-gallery__main">
-              <img
+              <ApiImage
                 src={images[selectedImg]?.url}
                 alt={images[selectedImg]?.altText || product.name}
                 className="product-gallery__main-img"
@@ -325,7 +326,7 @@ export default function ProductPage() {
       {/* Lightbox */}
       {lightboxOpen && (
         <div className="lightbox" onClick={() => setLightboxOpen(false)}>
-          <img src={images[selectedImg]?.url} alt={product.name} className="lightbox__img" />
+          <ApiImage src={images[selectedImg]?.url} alt={product.name} className="lightbox__img" />
           <button className="lightbox__close"><X size={24} /></button>
         </div>
       )}

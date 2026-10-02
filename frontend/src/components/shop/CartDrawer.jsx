@@ -8,6 +8,7 @@ import { useCartStore } from '@/store/cart.store';
 import { useUiStore } from '@/store/cart.store';
 import { useAuthStore } from '@/store/auth.store';
 import toast from 'react-hot-toast';
+import ApiImage from '@/components/ui/ApiImage';
 
 export default function CartDrawer() {
   const { cartOpen, setCartOpen } = useUiStore();
@@ -130,8 +131,8 @@ export default function CartDrawer() {
               return (
                 <div key={item.id} className="cart-item">
                   <Link to={`/products/${item.product?.slug}`} onClick={() => setCartOpen(false)}>
-                    <img
-                      src={item.product?.images?.[0]?.url || 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=80&h=80&fit=crop'}
+                    <ApiImage
+                      src={item.product?.images?.[0]?.url}
                       alt={item.product?.name}
                       className="cart-item__img"
                     />

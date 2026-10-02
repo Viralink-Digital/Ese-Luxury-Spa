@@ -4,6 +4,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { ArrowLeft, Loader2 } from 'lucide-react';
 import { orderApi } from '@/lib/api';
 import toast from 'react-hot-toast';
+import ApiImage from '@/components/ui/ApiImage';
 
 const SC = { PENDING: '#f59e0b', CONFIRMED: '#3b82f6', SHIPPED: '#06b6d4', DELIVERED: '#10b981', CANCELLED: '#ef4444' };
 
@@ -34,7 +35,7 @@ export default function OrderDetailPage() {
           <h3 className="form-card__title">Items</h3>
           {order.items?.map((item) => (
             <div key={item.id} className="order-item">
-              <img src={item.image} alt={item.name} className="order-item__img" />
+              <ApiImage src={item.image} alt={item.name} className="order-item__img" />
               <div className="order-item__info"><p className="order-item__name">{item.name}</p><p className="order-item__meta">Qty: {item.quantity}</p></div>
               <span className="order-item__total">₵{parseFloat(item.total).toLocaleString()}</span>
             </div>

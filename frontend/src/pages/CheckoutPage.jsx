@@ -6,6 +6,7 @@ import { CheckCircle, ChevronRight, Loader2, Tag, MapPin, CreditCard, Package } 
 import { cartApi, orderApi, userApi, couponApi } from '@/lib/api';
 import { useCartStore } from '@/store/cart.store';
 import toast from 'react-hot-toast';
+import ApiImage from '@/components/ui/ApiImage';
 
 const STEPS = ['Cart Review', 'Shipping', 'Payment', 'Confirm'];
 
@@ -81,7 +82,7 @@ export default function CheckoutPage() {
         {cart?.items?.map((item) => (
           <div key={item.id} className="checkout-summary__item">
             <div className="checkout-summary__item-img">
-              <img src={item.product?.images?.[0]?.url} alt={item.product?.name} />
+              <ApiImage src={item.product?.images?.[0]?.url} alt={item.product?.name} />
               <span className="checkout-summary__item-qty">{item.quantity}</span>
             </div>
             <div className="checkout-summary__item-info">
@@ -177,7 +178,7 @@ export default function CheckoutPage() {
                     <div className="checkout-cart-list">
                       {cart?.items?.map((item) => (
                         <div key={item.id} className="checkout-cart-item">
-                          <img src={item.product?.images?.[0]?.url} alt={item.product?.name} className="checkout-cart-item__img" />
+                          <ApiImage src={item.product?.images?.[0]?.url} alt={item.product?.name} className="checkout-cart-item__img" />
                           <div className="checkout-cart-item__info">
                             <p className="checkout-cart-item__name">{item.product?.name}</p>
                             {item.variant && <p className="checkout-cart-item__variant">{item.variant.name}: {item.variant.value}</p>}

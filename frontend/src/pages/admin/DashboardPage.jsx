@@ -7,6 +7,7 @@ import {
   ArrowUpRight, ArrowDownRight, Eye, ChevronRight,
 } from 'lucide-react';
 import { adminApi } from '@/lib/api';
+import ApiImage from '@/components/ui/ApiImage';
 
 const PERIODS = [
   { label: '7 Days', value: '7d' },
@@ -221,7 +222,7 @@ export default function AdminDashboard() {
             {data?.topProducts?.map((p, i) => (
               <div key={p.id} className="top-product-item">
                 <span className="top-product-rank">#{i + 1}</span>
-                <img
+                <ApiImage
                   src={p.images?.[0]?.url}
                   alt={p.name}
                   className="top-product-img"

@@ -1,6 +1,7 @@
 // src/components/home/PromoBanners.jsx
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import ApiImage from '@/components/ui/ApiImage';
 
 const FALLBACK_BANNERS = [
   {
@@ -40,7 +41,7 @@ export default function PromoBanners({ banners }) {
               to={banner.ctaUrl || '/shop'}
               className={`promo-banner promo-banner--${banner.theme || (i === 0 ? 'light' : 'dark')}`}
             >
-              <img
+              <ApiImage
                 src={banner.image}
                 alt={banner.title}
                 className="promo-banner__img"

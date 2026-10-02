@@ -5,6 +5,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Upload, X, Plus, Loader2, Save, ArrowLeft } from 'lucide-react';
 import { productApi, categoryApi, brandApi, uploadApi, refreshAccessToken } from '@/lib/api';
 import toast from 'react-hot-toast';
+import ApiImage from '@/components/ui/ApiImage';
 
 export default function AdminProductFormPage() {
   const { id } = useParams();
@@ -380,7 +381,7 @@ export default function AdminProductFormPage() {
                 <div className="image-grid">
                   {form.images.map((img, i) => (
                     <div key={i} className="image-thumb">
-                      <img src={img.url} alt={img.altText || `Image ${i + 1}`} />
+                      <ApiImage src={img.url} alt={img.altText || `Image ${i + 1}`} />
                       {i === 0 && <span className="image-thumb__primary">Primary</span>}
                       <button className="image-thumb__remove" onClick={() => removeImage(i)}><X size={12} /></button>
                     </div>

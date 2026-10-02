@@ -7,6 +7,7 @@ import { productApi } from '@/lib/api';
 import { useCurrencyStore } from '@/store/currency.store';
 import { useUiStore } from '@/store/cart.store';
 import { formatDualPrice } from '@/lib/price';
+import ApiImage from '@/components/ui/ApiImage';
 
 const TRENDING = ['Rose Serum', 'Lip Gloss', 'Sunscreen', 'Body Butter', 'Face Mask'];
 
@@ -106,8 +107,8 @@ export default function SearchModal() {
                   className="search-result"
                   onClick={() => setSearchOpen(false)}
                 >
-                  <img
-                    src={p.primaryImage || 'https://via.placeholder.com/48'}
+                  <ApiImage
+                    src={p.primaryImage}
                     alt={p.name}
                     className="search-result__img"
                   />

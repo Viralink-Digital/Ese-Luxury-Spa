@@ -5,6 +5,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Plus, Search, Edit, Trash2, Eye, Star, Package, Loader2 } from 'lucide-react';
 import { productApi } from '@/lib/api';
 import toast from 'react-hot-toast';
+import ApiImage from '@/components/ui/ApiImage';
 
 export default function AdminProductsPage() {
   const [search, setSearch] = useState('');
@@ -111,8 +112,8 @@ export default function AdminProductsPage() {
                     <td><input type="checkbox" /></td>
                     <td>
                       <div className="admin-product-cell">
-                        <img
-                          src={p.primaryImage || 'https://via.placeholder.com/40'}
+                        <ApiImage
+                          src={p.primaryImage}
                           alt={p.name}
                           className="admin-product-img"
                         />
